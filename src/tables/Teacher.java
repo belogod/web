@@ -18,6 +18,9 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
 
+    @OneToMany (mappedBy = "teachers")
+    private Collection<Services> serviceses;
+
     public Teacher(String lastName, String name, String phone) {
         this.lastName = lastName;
         this.name = name;

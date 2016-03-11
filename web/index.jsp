@@ -12,5 +12,6 @@
   </head>
   <body>
     <a href="main" title="Показать клиентов">Клиенты</a>
+  <a href="books" title="Книги">Книги</a>
   </body>
 </html>

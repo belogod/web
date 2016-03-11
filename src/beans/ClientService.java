@@ -7,9 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by Yevhen on 29.02.2016.
- */
+
 @Stateless
 public class ClientService {
     @PersistenceContext
