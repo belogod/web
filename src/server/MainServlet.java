@@ -24,20 +24,30 @@ public class MainServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request,response);
-        booksRequest(request,response);
+        //booksRequest(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request,response);
-        booksRequest(request,response);
+        //booksRequest(request,response);
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        switch(request.getServletPath()) {
+            case "/main":
+                clientsRequest(request,response);
+                break;
+            case "/books":
+                booksRequest(request,response);
+                break;
+        }
+
+    }
+
+    private void clientsRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Client> clients = cs.findAll();
         request.setAttribute("clients",clients);
         request.getRequestDispatcher("/show_all_clients.jsp").forward(request,response);
-
-
     }
 
     private void booksRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
