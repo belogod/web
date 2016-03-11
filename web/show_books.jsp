@@ -15,7 +15,7 @@
 <body>
 <table border="1">
     <thead>
-    <tr><th>Название</th><th>Автор</th><th>Страници</th></tr>
+    <tr><th>Название</th><th>Автор</th><th>Страницы</th></tr>
         </thead>
     <tbody>
     <c:forEach var="book" items="${books}">
