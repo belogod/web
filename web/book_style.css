@@ -1,0 +1,8 @@
+
+/*фон для книг*/
+body{
+    background-image: url(image/book.jpg);
+    background-color: #c7b39b;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}

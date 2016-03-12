@@ -11,8 +11,10 @@
 <head>
     <title>Книги</title>
     <link href="style.css" rel="stylesheet">
+    <link href="book_style.css" rel="stylesheet">
 </head>
 <body>
+
 <table border="1">
     <thead>
     <tr><th>Название</th><th>Автор</th><th>Страницы</th></tr>
