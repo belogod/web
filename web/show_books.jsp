@@ -17,11 +17,17 @@
 
 <table border="1">
     <thead>
-    <tr><th>Название</th><th>Автор</th><th>Страницы</th></tr>
+    <tr><th>Название</th><th>Автор</th><th>Страницы</th><th>Удалить</th></tr>
         </thead>
     <tbody>
     <c:forEach var="book" items="${books}">
-        <tr><td>${book.title}</td><td>${book.avtor}</td><td>${book.pages}</td></tr>
+        <tr>
+            <td>${book.title}</td>
+            <td>${book.avtor}</td>
+            <td>${book.pages}</td>
+            <td><a href="delete?book_id=${book.id}">удалить</a></td>
+        </tr>
+
     </c:forEach>
     </tbody>
 </table>

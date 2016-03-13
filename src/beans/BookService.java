@@ -14,6 +14,11 @@ import java.util.List;
 public class BookService {
     @PersistenceContext
     EntityManager em;
+
+    public Book find(Integer id){
+        return em.find(Book.class, id);
+    }
+
     public Book create(String title, String avtor, Integer pages){
         Book book = new Book(title,avtor,pages);
         em.persist(book);
@@ -22,5 +27,10 @@ public class BookService {
     public List<Book> findAll ()  {
 
         return em.createNamedQuery("Book.findAll").getResultList();
+    }
+
+    public void remove(Integer id) {
+        Book book = em.find(Book.class, id);
+        em.remove(book);
     }
 }
