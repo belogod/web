@@ -1,5 +1,26 @@
  0. Главная стр. - index.jsp
  1. Работа с клиентами  - (/main/)
     1.1. Просмотр - show.html
+        1.1.1. Удаление - delete.html
     1.2. Добавление - add.html
+    1.3. Свявь - connection.
  2. Книги - (/books/)
+   2.1. Просмотр - show.html
+        2.1.1. Удаление - delete.html
+        2.1.2. Сортировка - sorting.thml
+   2.2. Добавление - add.html
+ 3. Аудиокниги - (/audiobooks/)
+     3.1. Просмотр - show.html
+         3.1.1. Удаление - delete.html
+         3.1.2. Сортировка - sorting.thml
+     3.2. Добавление - add.html
+ 4. Учителя - (/contacts/)
+     4.1. Просмотр - show.html
+         4.1.1. Удаление - delete.html
+     4.2. Добавление - add.html
+     5. Цены и расписание - (/price/)
+     5.1 Просмотр - show.html
+     6. Отзывы - (/reviews/)
+     6.1 Просмотр - (/show.html/)
+     6.1.1. Удаление - delete.html
+         6.2. Добавление - add.html
