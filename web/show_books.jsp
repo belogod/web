@@ -10,8 +10,8 @@
 <html>
 <head>
     <title>Книги</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="book_style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="../book_style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             <td>${book.title}</td>
             <td>${book.avtor}</td>
             <td>${book.pages}</td>
-            <td><a href="delete?book_id=${book.id}">удалить</a></td>
+            <td><a href="delete.html?book_id=${book.id}">удалить</a></td>
         </tr>
 
     </c:forEach>
