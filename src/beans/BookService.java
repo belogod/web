@@ -7,9 +7,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by Belogod on 11.03.2016.
- */
 @Stateless
 public class BookService {
     @PersistenceContext
@@ -19,8 +16,8 @@ public class BookService {
         return em.find(Book.class, id);
     }
 
-    public Book create(String title, String avtor, Integer pages){
-        Book book = new Book(title,avtor,pages);
+    public Book create(String title,Integer pages){
+        Book book = new Book(title,pages);
         em.persist(book);
         return book;
     }

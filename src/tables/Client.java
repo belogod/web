@@ -26,6 +26,10 @@ public class Client {
     @ManyToMany(mappedBy = "clients")
     private Collection<Gruppa> grupps;
 
+    @OneToMany (mappedBy = "client")
+    private Collection<Reviews> reviews;
+
+
     public Client(String lastName, String name, String phone, String email) {
         this.lastName = lastName;
         this.name = name;
@@ -110,5 +114,13 @@ public class Client {
 
     public void setGrupps(Collection<Gruppa> grupps) {
         this.grupps = grupps;
+    }
+
+    public Collection<Reviews> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(Collection<Reviews> reviews) {
+        this.reviews = reviews;
     }
 }

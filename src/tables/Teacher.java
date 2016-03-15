@@ -18,8 +18,10 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
 
-    @OneToMany (mappedBy = "teachers")
-    private Collection<Services> serviceses;
+    @ManyToOne(optional = false)
+    private Services services;
+
+
 
     public Teacher(String lastName, String name, String phone) {
         this.lastName = lastName;
@@ -94,5 +96,15 @@ public class Teacher {
 
     public void setGrupps(Collection<Gruppa> grupps) {
         this.grupps = grupps;
+    }
+
+
+
+    public Services getServices() {
+        return services;
+    }
+
+    public void setServices(Services services) {
+        this.services = services;
     }
 }

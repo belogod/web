@@ -18,9 +18,10 @@
      4.1. Просмотр - show.html
          4.1.1. Удаление - delete.html
      4.2. Добавление - add.html
-     5. Цены и расписание - (/price/)
+     5. Цены и расписание - (/services/)
      5.1 Просмотр - show.html
      6. Отзывы - (/reviews/)
      6.1 Просмотр - (/show.html/)
-     6.1.1. Удаление - delete.html
-         6.2. Добавление - add.html
+     6.2. Добавление - add.html
+
+     (Добавить связь OneToOne Reviews - Teacher)

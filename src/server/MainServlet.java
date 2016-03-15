@@ -46,7 +46,7 @@ public class MainServlet extends HttpServlet {
 
     private void teachersRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
-        //
+
     }
 
     private void clientsRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

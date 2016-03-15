@@ -1,6 +1,7 @@
 package tables;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Created by Belogod on 11.03.2016.
@@ -13,8 +14,10 @@ public class Services {
     private String price;
 
 
-    @ManyToOne
-    private Teacher teachers;
+
+
+    @OneToMany (mappedBy = "services")
+    private Collection<Teacher> teacher;
 
     public Integer getId() {
         return id;
@@ -81,11 +84,4 @@ public class Services {
 
 
 
-    public Teacher getTeachers() {
-        return teachers;
-    }
-
-    public void setTeachers(Teacher teachers) {
-        this.teachers = teachers;
-    }
 }

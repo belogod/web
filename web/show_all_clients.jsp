@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Клиенты</title>
-    <link href="style.css" rel="stylesheet">
+    <%--<link href="style.css" rel="stylesheet">--%>
 </head>
 <body>
     <table border="1">

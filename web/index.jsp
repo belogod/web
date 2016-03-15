@@ -29,7 +29,7 @@
 <div id="foot"></div>
 <div id="menu_left"></div>
 <div id="menu_left2">Меню:</div>
-<a href="clienst/main.html" class="ssylka1">Клиенты</a>
+<a href="clients/main.html" class="ssylka1">Клиенты</a>
 <a href="books/show.html" class="ssylka2">Книги</a>
 <div id="menu_right"></div>
 <div id="menu_right2">Текст для справок</div>
