@@ -4,8 +4,6 @@
 <html>
 <head>
     <title>Книги</title>
-    <%--<link href="../style.css" rel="stylesheet">--%>
-    <%--<link href="../book_style.css" rel="stylesheet">--%>
 </head>
 <body>
 

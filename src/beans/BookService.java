@@ -29,5 +29,7 @@ public class BookService {
     public void remove(Integer id) {
         Book book = em.find(Book.class, id);
         em.remove(book);
+
+
     }
 }
