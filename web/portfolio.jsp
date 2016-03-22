@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -19,7 +20,7 @@
     <div id="header"> <img src="images/logo.png" />
         <div id="nav">
             <ul class="menu">
-                <li class="current_page_item"><a href="index.jsp">Главная</a></li>
+                <li class="current_page_item"><a href="main.jsp">Главная</a></li>
                 <li><a href="page.html">Сервисы</a>
                     <ul class="sub-menu">
                         <li><a href="clients/main.html">Клиенты</a></li>
@@ -29,7 +30,7 @@
                         <li><a href="#">Web Design</a></li>
                     </ul>
                 </li>
-                <li><a href="portfolio.jsp">Наша команда</a></li>
+                <li><a href="portfolio.html">Наша команда</a></li>
                 <li><a href="articles.html">Статьи</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
@@ -40,24 +41,27 @@
     <div class="page-headline">Наша команда</div>
     <div id="main">
         <div id="porfolio-content">
-            <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
+            <c:forEach var="teacher" items="${teachers}">
+            <div class="portfolio-item first"> <a href="show_teacher.html?id=${teacher.id}"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
             <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
-            <div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-            <!--end portfolio-item-->
+            </c:forEach>
+                <%--<div class="portfolio-item"> <a href="show_teacher.html?id=2"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+
+            <%--<div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item first"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
+            <%--<div class="portfolio-item"> <a href="#"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            <%--<!--end portfolio-item-->--%>
         </div>
         <!--portfolio-content-->
     </div>

@@ -8,6 +8,9 @@ import java.util.Objects;
  * Created by Yevhen on 29.02.2016.
  */
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Teacher.findAll", query = "select t from Teacher t")
+})
 public class Teacher {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -21,6 +24,8 @@ public class Teacher {
     @ManyToOne(optional = false)
     private Services services;
 
+    @OneToMany(mappedBy = "teacher")
+    private Collection<Review> reviews;
 
 
     public Teacher(String lastName, String name, String phone) {
@@ -98,7 +103,13 @@ public class Teacher {
         this.grupps = grupps;
     }
 
+    public Collection<Review> getReviews() {
+        return reviews;
+    }
 
+    public void setReviews(Collection<Review> reviews) {
+        this.reviews = reviews;
+    }
 
     public Services getServices() {
         return services;

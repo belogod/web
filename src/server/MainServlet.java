@@ -2,8 +2,10 @@ package server;
 
 import beans.BookService;
 import beans.ClientService;
+import beans.TeacherService;
 import tables.Book;
 import tables.Client;
+import tables.Teacher;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -21,6 +23,8 @@ public class MainServlet extends HttpServlet {
     ClientService cs;
     @EJB
     BookService bs;
+    @EJB
+    TeacherService ts;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -34,12 +38,18 @@ public class MainServlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
-        if (servletPath.contains("/clients/")) {
+        if (servletPath.contains("clients_main.html")) {
             clientsRequest(request, response);
-        } else if (servletPath.contains("/books/")) {
+        } else if (servletPath.contains("books_show.html")) {
             booksRequest(request, response);
         } else if (servletPath.contains("/teachers/")) {
             teachersRequest(request,response);
+        } else if (servletPath.contains("portfolio.html")) {
+            List<Teacher> teachers = ts.findAll();
+            request.setAttribute("teachers", teachers);
+            request.getRequestDispatcher("/portfolio.jsp").forward(request,response);
+        } else if (servletPath.contains("index.html")) {
+            request.getRequestDispatcher("/main.jsp").forward(request,response);
         }
 
     }

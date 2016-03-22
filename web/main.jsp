@@ -25,14 +25,14 @@
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
                 <li><a href="page.html">Сервисы</a>
                     <ul class="sub-menu">
-                        <li><a href="clients/main.html">Клиенты</a></li>
+                        <li><a href="clients_main.html">Клиенты</a></li>
 
-                        <li><a href="books/show.html">Книги</a></li>
+                        <li><a href="books_show.html">Книги</a></li>
                         <li><a href="#">Search Engine Optimization</a></li>
                         <li><a href="#">Web Design</a></li>
                     </ul>
                 </li>
-                <li><a href="portfolio.jsp">Наша команда</a></li>
+                <li><a href="portfolio.html">Наша команда</a></li>
                 <li><a href="articles.html">Статьи</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>

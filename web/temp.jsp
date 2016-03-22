@@ -11,6 +11,6 @@
     <title>Temp</title>
 </head>
 <body>
- <jsp:forward page="index.jsp"/>
+ <jsp:forward page="main.jsp"/>
 </body>
 </html>

@@ -1,24 +1,23 @@
 package tables;
 
 import javax.persistence.*;
-import java.util.Collection;
 import java.util.Date;
 
 /**
  * Created by Belogod on 15.03.2016.
  */
 @Entity
-public class Reviews {
+public class Review {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Date date;
     private String text;
 
-
-
     @ManyToOne(optional = false)
     private Client client;
 
+    @ManyToOne(optional = false)
+    private Teacher teacher;
 
     public Integer getId() {
         return id;
@@ -28,12 +27,12 @@ public class Reviews {
         this.id = id;
     }
 
-    public Reviews(Date date, String text) {
+    public Review(Date date, String text) {
         this.date = date;
         this.text = text;
     }
 
-    public Reviews() {
+    public Review() {
     }
 
     public Date getDate() {
@@ -52,16 +51,24 @@ public class Reviews {
         this.text = text;
     }
 
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Reviews reviews = (Reviews) o;
+        Review review = (Review) o;
 
-        if (id != null ? !id.equals(reviews.id) : reviews.id != null) return false;
-        if (date != null ? !date.equals(reviews.date) : reviews.date != null) return false;
-        return text != null ? text.equals(reviews.text) : reviews.text == null;
+        if (id != null ? !id.equals(review.id) : review.id != null) return false;
+        if (date != null ? !date.equals(review.date) : review.date != null) return false;
+        return text != null ? text.equals(review.text) : review.text == null;
 
     }
 
@@ -75,7 +82,7 @@ public class Reviews {
 
     @Override
     public String toString() {
-        return "Reviews{" +
+        return "Review{" +
                 "id=" + id +
                 ", date=" + date +
                 ", text='" + text + '\'' +
