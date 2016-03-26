@@ -13,8 +13,8 @@
     <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
     <link rel="stylesheet" href="styles/ie6.css" />
     <![endif]-->
-    <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
-    <!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
+    <%--<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->--%>
+    <%--<!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->--%>
 </head>
 
 <body class="home">
@@ -23,18 +23,17 @@
         <div id="nav">
             <ul class="menu">
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
-                <li><a href="page.html">Сервисы</a>
-                    <ul class="sub-menu">
-                        <li><a href="clients_main.html">Клиенты</a></li>
 
-                        <li><a href="books_show.html">Книги</a></li>
-                        <li><a href="#">Search Engine Optimization</a></li>
-                        <li><a href="#">Web Design</a></li>
+                <li><a href="study.html">Занятия</a></li>
+                <li><a href="">Обучение</a>
+                    <ul class="sub-menu">
+                        <li><a href="interesting.html">Это интересно</a></li>
+                        <li><a href="slang.html">Сленг</a></li>
+                        <li><a href="lazy_person.html">Для лентяенв</a></li>
                     </ul>
-                </li>
-                <li><a href="portfolio.html">Наша команда</a></li>
-                <li><a href="articles.html">Статьи</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="command.html">Наша команда</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contact.jsp">Контакты</a></li>
             </ul>
         </div>
         <!--end nav-->
@@ -84,9 +83,6 @@
 
 </div>
 
-
-<%--<a href="clients/main.html" class="ssylka1">Клиенты</a>--%>
-<%--<a href="books/show.html" class="ssylka2">Книги</a>--%>
 
 
 
