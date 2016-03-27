@@ -7,14 +7,12 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/initSlider.js"></script>
-    <!--[if IE 6]>
+
     <script src="js/ie6-transparency.js"></script>
     <script>DD_belatedPNG.fix('#header img, #featured-section h2, #circles img, #frontpage-sidebar .read-more, .blue-bullets li, #sidebar .sidebar-button, #project-content .read-more, .more-link, #contact-form .submit, .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal, #commentform .submit');</script>
     <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
     <link rel="stylesheet" href="styles/ie6.css" />
-    <![endif]-->
-    <%--<!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->--%>
-    <%--<!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->--%>
+
 </head>
 
 <body class="home">
@@ -23,7 +21,7 @@
         <div id="nav">
             <ul class="menu">
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
-
+                <li><a href="teacher.html">Преподаватели</a></li>
                 <li><a href="study.html">Занятия</a></li>
                 <li><a href="">Обучение</a>
                     <ul class="sub-menu">

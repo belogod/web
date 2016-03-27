@@ -7,7 +7,7 @@ import java.util.Collection;
  * Created by Belogod on 11.03.2016.
  */
 @Entity
-public class Services {
+public class Service {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String language;
@@ -16,7 +16,7 @@ public class Services {
 
 
 
-    @OneToMany (mappedBy = "services")
+    @OneToMany (mappedBy = "service")
     private Collection<Teacher> teacher;
 
     public Integer getId() {
@@ -27,12 +27,12 @@ public class Services {
         this.id = id;
     }
 
-    public Services(String language, String price) {
+    public Service(String language, String price) {
         this.language = language;
         this.price = price;
     }
 
-    public Services() {
+    public Service() {
 
     }
 
@@ -57,11 +57,11 @@ public class Services {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Services services = (Services) o;
+        Service service = (Service) o;
 
-        if (id != null ? !id.equals(services.id) : services.id != null) return false;
-        if (language != null ? !language.equals(services.language) : services.language != null) return false;
-        return price != null ? price.equals(services.price) : services.price == null;
+        if (id != null ? !id.equals(service.id) : service.id != null) return false;
+        if (language != null ? !language.equals(service.language) : service.language != null) return false;
+        return price != null ? price.equals(service.price) : service.price == null;
 
     }
 
@@ -75,7 +75,7 @@ public class Services {
 
     @Override
     public String toString() {
-        return "Services{" +
+        return "Service{" +
                 "id=" + id +
                 ", language='" + language + '\'' +
                 ", price='" + price + '\'' +

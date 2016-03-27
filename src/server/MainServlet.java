@@ -45,14 +45,17 @@ public class MainServlet extends HttpServlet {
         } else if (servletPath.contains("/teachers/")) {
             teachersRequest(request,response);
         } else if (servletPath.contains("command.html")) {
-            List<Teacher> teachers = ts.findAll();
-            request.setAttribute("teachers", teachers);
-            request.getRequestDispatcher("/command.jsp").forward(request,response);
+             request.getRequestDispatcher("/command.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
             request.getRequestDispatcher("/main.jsp").forward(request,response);
         }
         else if (servletPath.contains("contact.html")){
             request.getRequestDispatcher("/contact.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("teacher.html")){
+            List<Teacher> teachers = ts.findAll();
+            request.setAttribute("teachers", teachers);
+            request.getRequestDispatcher("/teacher.jsp").forward(request,response);
         }
 
     }

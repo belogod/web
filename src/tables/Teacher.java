@@ -22,7 +22,7 @@ public class Teacher {
     private Collection<Gruppa> grupps;
 
     @ManyToOne(optional = false)
-    private Services services;
+    private Service service;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Review> reviews;
@@ -111,11 +111,11 @@ public class Teacher {
         this.reviews = reviews;
     }
 
-    public Services getServices() {
-        return services;
+    public Service getService() {
+        return service;
     }
 
-    public void setServices(Services services) {
-        this.services = services;
+    public void setService(Service service) {
+        this.service = service;
     }
 }
