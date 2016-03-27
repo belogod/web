@@ -49,7 +49,7 @@
         <tr><th>Фамилия</th><th>Имя</th><th>Телефон</th><th>Язык</th></tr>
         <c:forEach var="teacher" items="${teachers}">
 
-        <tr><td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td><td></td></tr>
+        <tr><td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td><td>${teacher.service}</td></tr>
         </c:forEach>
 
 

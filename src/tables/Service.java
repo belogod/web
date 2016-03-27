@@ -75,11 +75,7 @@ public class Service {
 
     @Override
     public String toString() {
-        return "Service{" +
-                "id=" + id +
-                ", language='" + language + '\'' +
-                ", price='" + price + '\'' +
-                '}';
+        return language;
     }
 
 
