@@ -57,6 +57,21 @@ public class MainServlet extends HttpServlet {
             request.setAttribute("teachers", teachers);
             request.getRequestDispatcher("/teacher.jsp").forward(request,response);
         }
+        else if (servletPath.contains("study.html")){
+            request.getRequestDispatcher("/study.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("reviews.html")){
+            request.getRequestDispatcher("/reviews.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("interesting.html")){
+            request.getRequestDispatcher("/interesting.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("slang.html")){
+            request.getRequestDispatcher("/slang.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("lazy_person.html")){
+            request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
+        }
 
     }
 
@@ -80,6 +95,7 @@ public class MainServlet extends HttpServlet {
         } else {
             showBooks(request, response);
         }
+
 
     }
 

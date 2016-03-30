@@ -16,12 +16,12 @@
 </head>
 <body class="home">
 <div id="wrap">
-    <div id="header"> <img src="images/logo.png" />
+    <div id="header">
         <div id="nav">
             <ul class="menu">
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
                 <li><a href="teacher.html">Преподаватели</a></li>
-                <li><a href="study.html">Занятия</a></li>
+                <li><a href="study.html">Расписание</a></li>
                 <li><a href="">Обучение</a>
                     <ul class="sub-menu">
                         <li><a href="interesting.html">Это интересно</a></li>

@@ -1,9 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Преподаватели</title>
+    <title>Сленг</title>
+    <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
     <!--[if IE 6]>
     <script src="js/ie6-transparency.js"></script>
@@ -13,7 +13,6 @@
     <![endif]-->
     <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
     <!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
-
 </head>
 <body class="page">
 <div id="wrap">
@@ -37,27 +36,10 @@
         <!--end nav-->
     </div>
     <!--end header-->
-    <div class="page-headline">Преподаватели</div>
-    <div id="main">
-
-
-
-
-
-
-    <table>
-        <tr><th>Фамилия</th><th>Имя</th><th>Телефон</th><th>Язык</th></tr>
-        <c:forEach var="teacher" items="${teachers}">
-
-        <tr><td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td><td>${teacher.service}</td></tr>
-        </c:forEach>
-
-
-    </table>
+    <div class="page-headline">Сленг</div>
 
 </div>
-<!--end wrap-->
-    </div>
+
 </body>
 <div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>
 <!--end cache-images-->
