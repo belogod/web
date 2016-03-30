@@ -26,4 +26,3 @@
  7. Наша команда - (/portfolio/)
 
 
-     (Добавить связь OneToOne Reviews - Teacher)

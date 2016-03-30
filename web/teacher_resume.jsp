@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Преподаватели</title>
+    <title>Резюме</title>
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
     <!--[if IE 6]>
     <script src="js/ie6-transparency.js"></script>
@@ -39,12 +39,18 @@
     <!--end header-->
     <div class="page-headline">Преподаватели</div>
     <div id="main">
-<c:forEach var="teacher" items="${teachers}">
-        <div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-       </c:forEach>
-</div>
-<!--end wrap-->
+
+        <table>
+            <tr><th>Фамилия</th><th>Имя</th><th>Телефон</th><th>Язык</th></tr>
+            <c:forEach var="teacher" items="${teachers}">
+
+                <tr><td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td><td>${teacher.service}</td></tr>
+            </c:forEach>
+        </table>
+
     </div>
+    <!--end wrap-->
+</div>
 </body>
 <div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>
 <!--end cache-images-->
