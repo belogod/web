@@ -76,15 +76,21 @@ a:hover{
 /* ------------ */
 #header{
 	height:100px;
-	padding:45px 0 0 0;
-	
+	padding-top: 25px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+
 }
 #header img, #header h1{
 	float:left;
 }
 #header h1{
 	font-size:50px;
-	margin:32px 0 0 5px;
+	margin-top: 32px;
+	margin-right: 0;
+	margin-left: 5px;
+	margin-bottom: 0;
 }
 /* --------- */
 /* -- Nav -- */
@@ -110,7 +116,7 @@ a:hover{
 	margin:0;
 	color:#555;
 	text-decoration:none;
-	font-size:20px;
+	font-size:18px;
 }
 .menu .current a, .menu li:hover > a{
 	color:#2684cd;
@@ -143,6 +149,7 @@ a:hover{
 }
 .menu ul a{
 	font-size:16px;
+	/*font-size:18px;*/
 }
 .menu ul ul{
 	left:250px;
@@ -153,6 +160,7 @@ a:hover{
 }
 .menu .sub-menu li.current_page_item a{
 	color:#2684cd;
+	height: 30px;
 }
 /* ---------------------- */
 /* -- Featured Section -- */
@@ -251,6 +259,7 @@ a:hover{
 }
 #frontpage-content p{
 	font-size:16px;
+	/*font-size:18px;*/
 	line-height:24px;
 }
 #frontpage-sidebar{
@@ -518,6 +527,12 @@ th {
 	padding: 10px;
 }
 td {
-	background: #F5D7BF;
+	background: rgba(244, 245, 234, 0.04);
 	padding: 10px;
+}
+
+.teacher-lastname {
+	width: 200px;
+	vertical-align: top;
+	font-size: large;
 }

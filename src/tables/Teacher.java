@@ -17,6 +17,7 @@ public class Teacher {
     private String lastName;
     private String name;
     private String phone;
+    private String pictureFileName;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
@@ -28,10 +29,11 @@ public class Teacher {
     private Collection<Review> reviews;
 
 
-    public Teacher(String lastName, String name, String phone) {
+    public Teacher(String lastName, String name, String phone, String pictureFileName) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
+        this.pictureFileName = pictureFileName;
     }
 
     public Teacher() {
@@ -67,6 +69,14 @@ public class Teacher {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getPictureFileName() {
+        return pictureFileName;
+    }
+
+    public void setPictureFileName(String pictureFileName) {
+        this.pictureFileName = pictureFileName;
     }
 
     @Override

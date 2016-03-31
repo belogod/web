@@ -42,12 +42,10 @@ public class MainServlet extends HttpServlet {
             clientsRequest(request, response);
         } else if (servletPath.contains("books_show.html")) {
             booksRequest(request, response);
-        } else if (servletPath.contains("/teachers/")) {
-            teachersRequest(request,response);
         } else if (servletPath.contains("command.html")) {
              request.getRequestDispatcher("/command.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
-            request.getRequestDispatcher("/main.jsp").forward(request,response);
+            request.getRequestDispatcher("/main1.jsp").forward(request,response);
         }
         else if (servletPath.contains("contact.html")){
             request.getRequestDispatcher("/contact.jsp").forward(request,response);
@@ -72,11 +70,6 @@ public class MainServlet extends HttpServlet {
         else if (servletPath.contains("lazy_person.html")){
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
-
-    }
-
-    private void teachersRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String servletPath = request.getServletPath();
 
     }
 

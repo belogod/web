@@ -18,30 +18,45 @@
 <body class="page">
 <div id="wrap">
     <div id="header">
-        <div id="nav">
-            <ul class="menu">
-                <li class="current_page_item"><a href="index.html">Главная</a></li>
-                <li><a href="teacher.html">Преподаватели</a></li>
-                <li><a href="study.html">Расписание</a></li>
-                <li><a href="">Обучение</a>
-                    <ul class="sub-menu">
-                        <li><a href="interesting.html">Это интересно</a></li>
-                        <li><a href="slang.html">Сленг</a></li>
-                        <li><a href="lazy_person.html">Для лентяенв</a></li>
-                    </ul>
-                <li><a href="command.html">Наша команда</a></li>
-                <li><a href="reviews.html">Отзывы</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </div>
-        <!--end nav-->
+    <div id="nav">
+        <ul class="menu">
+            <li class="current_page_item"><a href="index.html">Главная</a></li>
+            <li><a href="teacher.html">Преподаватели</a></li>
+            <li><a href="study.html">Расписание</a></li>
+            <li><a href="">Обучение</a>
+                <ul class="sub-menu">
+                    <li><a href="interesting.html">Это интересно</a></li>
+                    <li><a href="slang.html">Сленг</a></li>
+                    <li><a href="lazy_person.html">Для лентяенв</a></li>
+                </ul>
+            <li><a href="command.html">Наша команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
     </div>
+    <!--end nav-->
+</div>
     <!--end header-->
+
     <div class="page-headline">Преподаватели</div>
     <div id="main">
-<c:forEach var="teacher" items="${teachers}">
-        <div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>
-       </c:forEach>
+        <table>
+
+            <tbody>
+            <c:forEach var="teacher" items="${teachers}">
+                <tr>
+                    <td>
+                        <a href="resume.html?tid=${teacher.id}">
+                        <img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
+                        </a>
+                    </td>
+                    <td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>
+                    <img src="images/phone.png"> ${teacher.phone}</td>
+                </tr>
+        <%--<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+            </c:forEach>
+            </tbody>
+        </table>
 </div>
 <!--end wrap-->
     </div>
