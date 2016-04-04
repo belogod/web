@@ -20,6 +20,9 @@ public class TeacherService {
         em.persist(teacher);
         return teacher;
     }
+    public Teacher find(Integer id) {
+        return em.find(Teacher.class, id);
+    }
 
     public List<Teacher> findAll() {
         return em.createNamedQuery("Teacher.findAll").getResultList();

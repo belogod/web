@@ -2,20 +2,22 @@
 <html>
 <head>
     <title>Главная</title>
+    <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
     <link type="text/css" rel="stylesheet" href="styles/skin.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="js/initSlider.js"></script>
-
+    <!--[if IE 6]>
     <script src="js/ie6-transparency.js"></script>
     <script>DD_belatedPNG.fix('#header img, #featured-section h2, #circles img, #frontpage-sidebar .read-more, .blue-bullets li, #sidebar .sidebar-button, #project-content .read-more, .more-link, #contact-form .submit, .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal, #commentform .submit');</script>
-
+    <style>body { behavior: url("styles/ie6-hover-fix.htc"); }</style>
     <link rel="stylesheet" href="styles/ie6.css" />
-
+    <![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
 </head>
-
-<body class="page">
+<body class="home">
 <div id="wrap">
     <div id="header">
         <div id="nav">
@@ -38,7 +40,7 @@
     </div>
     <!--end header-->
     <div id="featured-section">
-        <h2>Yin And Yang</h2>
+        <h2>Yin and Yang</h2>
         <div id="circles"> <img class="first" src="images/circle-red.png" /> <img src="images/circle-pink.png" /> <img src="images/circle-orange.png" /> <img src="images/circle-yellow.png" /> </div>
         <!--end circles-->
         <div id="image-slider">
@@ -78,12 +80,12 @@
         <!--end frontpage-sidebar-->
     </div>
     <!--end frontpage-main-->
-
+    <div id="footer">
+        <p class="copyright">Copyright &copy; <a href="#">Domain Name</a> - All Rights Reserved / Design By <a target="_blank" href="http://www.chris-creed.com/">Chris Creed</a></p>
+    </div>
+    <!--end footer-->
 </div>
-
-
-
-
+<!--end wrap-->
 </body>
 <div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>
 <!--end cache-images-->

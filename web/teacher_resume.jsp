@@ -37,13 +37,12 @@
         <!--end nav-->
     </div>
     <!--end header-->
-    <div class="page-headline">Преподаватели</div>
+
+    <div class="page-headline">${id.name}</div>
     <div id="main">
+       <tr><th>Фамилия</th><th>Имя</th><th>Телефон</th><th>Язык</th></tr>
 
-        <table>
-            <tr><th>Фамилия</th><th>Имя</th><th>Телефон</th><th>Язык</th></tr>
-            <c:forEach var="teacher" items="${teachers}">
-
+        <c:forEach var="teacher" items="${id.teachers}">
                 <tr><td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td><td>${teacher.service}</td></tr>
             </c:forEach>
         </table>

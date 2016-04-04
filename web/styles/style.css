@@ -97,7 +97,10 @@ a:hover{
 /* --------- */
 #nav{
 	float:right;
-	margin:25px -15px 0 0;
+	margin-top: 25px;
+	margin-right: 20px;
+	margin-left: 0;
+	margin-bottom: 0;
 
 }
 .menu{
@@ -105,8 +108,14 @@ a:hover{
 
 }
 .menu li{
-	margin:0 5px;
-	padding:0 0 8px;
+	margin-top: 0;
+	margin-right: 5px;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 8px;
 	float:left;
 	position:relative;
 }
@@ -167,14 +176,19 @@ a:hover{
 /* ---------------------- */
 #featured-section{
 	float:left;
-	margin:10px 0 0 0;
+	margin-top: 50px;
+	margin-right: 0;
+	margin-left: 10px;
+	margin-bottom: 0;
 }
 #featured-section h2{
 	background:url(../images/Yin_and_yang.png) no-repeat;
-	width:953px;
+	width:auto;
 	height:56px;
 	text-indent:-9999px;
 	margin-top:0;
+	margin-left: 40px;
+
 }
 #circles{
 	float:left;

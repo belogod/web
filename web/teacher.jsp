@@ -46,7 +46,7 @@
             <c:forEach var="teacher" items="${teachers}">
                 <tr>
                     <td>
-                        <a href="resume.html?tid=${teacher.id}">
+                        <a href="teacher_resume.html?tid=${teacher.id}">
                         <img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
                         </a>
                     </td>
