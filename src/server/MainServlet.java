@@ -70,7 +70,12 @@ public class MainServlet extends HttpServlet {
         else if (servletPath.contains("lazy_person.html")){
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
-
+        else if (servletPath.contains("piece-of-cake.html")){
+            request.getRequestDispatcher("/piece-of-cake.jsp").forward(request,response);
+        }
+        else if (servletPath.contains("bite-the-bullet.html")){
+            request.getRequestDispatcher("/bite-the-bullet.jsp").forward(request,response);
+        }
     }
 
 
