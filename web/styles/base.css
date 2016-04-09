@@ -1,0 +1,180 @@
+
+
+/* GRID ---------------------------------------------------------*/
+
+	#wrapper {
+		width: 960px;
+		margin: 20px auto;
+	}
+
+	#main {
+		position: relative;
+	}
+
+	.columns {
+		overflow: hidden;
+	}
+
+	.columns .col {
+		float: left;
+		width: 217px;
+		margin-left: 30px;
+	}
+
+	.columns .col:first-child {
+		margin-left: 0;
+	}
+
+	.mainCol {
+		float: left;
+		width: 960px;
+	}
+
+	.sidebarCol {
+		float: right;
+		width: 270px;
+	}
+
+	.floatL {
+		float: left;
+		margin: 5px 20px 20px 0;
+	}
+
+	.floatR {
+		float: right;
+		margin: 5px 0 20px 20px;
+	}
+
+	h1, h2, h3, h4, form, table, ul, ol, p, dl, blockquote, hr {
+		margin-bottom: 30px;
+	}
+
+
+
+/* LISTS ---------------------------------------------------------*/
+	ul#pageTabs {
+		position: absolute;
+		top: 15px;
+		right: 0;
+	}
+	
+	ul#pageTabs li {
+		float: left;
+		list-style: none;
+		margin: 0 0 0 20px;
+		font-size: 20px;
+		background: url(../images/sitenav_bg.png) 0 50% no-repeat;
+	}
+
+	ul#pageTabs li:first-child {
+		background: none;
+	}
+
+	ul#pageTabs li a {
+		text-decoration: none;
+		padding: 0 0 0 20px;
+	}
+	
+
+	
+/* WORK ---------------------------------------------------------*/
+	
+	ul.work {
+		margin: 0 -15px;
+	}
+
+	ul.work li {
+		float: left;
+		width: 217px;
+		margin: 0 15px 30px 15px;
+		list-style: none;
+	}
+	
+	ul.work li p {
+		margin: 10px 0 0 0;
+		text-align: center;
+	}
+	
+	ul.applications li {
+		height: 180px;
+		text-align: center;
+	}
+
+/* GALLERY ---------------------------------------------------------*/
+
+	a.gallery {
+		position: relative;
+		display: block;
+		height: 145px;
+		width: 217px;
+	}
+	
+	a.gallery:hover,
+	a.gallery:focus {
+		-moz-box-shadow: 0 0 10px #000;
+		-webkit-box-shadow: 0 0 10px #000;
+	}
+	
+	a.gallery span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 61px;
+		width: 61px;
+		margin: -31px 0 0 -31px;
+		background: url(../images/sprite.png) 0 0 no-repeat;
+	}
+	
+	a.video span {
+		background: url(../images/sprite.png) -62px 0 no-repeat;
+	}
+
+
+/* BLOG ---------------------------------------------------------*/
+
+h3.info {
+	margin-top: -15px;
+}
+
+.introText {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.blogImage {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.blogImage > span {
+	left: -10px;
+	padding: 5px 10px;
+	position: absolute;
+	top: 10px;
+}
+
+
+
+
+
+
+
+
+blockquote, quote {
+	font-family: Georgia;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 24px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+blockquote p {
+	margin: 0;
+}
+.leftimg {
+	float:left; /* Выравнивание по левому краю */
+	margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
