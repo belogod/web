@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -40,41 +41,19 @@
     <div class="page-headline">Это интересно</div>
 
 
-
-
-
     <div id="main">
         <div id="content">
-            <div class="post" >
-                <h3 class="post-title"><a href="piece-of-cake.html">Piece of cake</a></h3>
-                <p><img src="picture/cake.jpg" alt="" /></p>
-                               <p>Что может быть проще, чем испечь торт? Ну в самом деле, замешиваем тесто, раскатываем его на коржи, выпекаем в духовке. Тем временем взбиваем крем. Потом соединяем все вместе, украшаем вишенками — и вуаля, торт готов. Хотя погодите: на все про все у нас ушло не меньше трех часов, и я уж молчу о том, на что стала похожа наша кухня в результате означенных манипуляций. Нет, определенно, в мире должны существовать вещи более простые, нежели кондитерская продукция. Тогда почему же англичане меряют легкость и простоту в единицах кусков торта?
-                                   <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>The chemistry exam was a piece of cake — Экзамен по химии был проще пареной репы.</p></blockquote>
-                <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>Solving math problems is a piece of cake for him — Он задачки по математике щелкает как орешки.</p></blockquote>
-                <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>I thought the game would be a piece of cake, but it turned out not so easy — Я полагал, игра будет сущей прогулкой, но она сложилась вовсе не так легко.</p></blockquote>
-            </div>
-            <!--end post-->
-            <div class="post-line"></div>
-            <div class="post" id="post-77">
-                <h3 class="post-title"><a href="bite-the-bullet.html">Bite the bullet</a></h3>
+            <%--  Извлекаем из БД  Таблица: interesting --%>
+            <c:forEach items="${interestings}" var="interesting">
+                <h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
+                <c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
+                <p><c:out value="${interesting.text}" escapeXml="false" /></p>
+                <div class="post-line"></div>
+            </c:forEach>
 
-                <p><img src="picture/bullet.jpg" alt="" /></p>
-                                    <br>Вы когда-нибудь пробовали укусить пулю? Если нет, то лучше и не пытайтесь — это совсем не вкусно и не слишком полезно для зубов. Однако англоговорящие граждане, судя по их словам, предаются этому занятию сплошь и рядом. Возможно, вам встречалось выражение bite the bullet — это и означает дословно "кусать пулю". Вот несколько примеров:
-                <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>Bite the bullet and admit you broke the window — Имей смелость признаться, что это ты разбил окно.</p></blockquote>
-
-                <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>I bit the bullet and booked a dentist appointment — Я собрался с духом и записался на прием к зубному.</p></blockquote>
-
-                <blockquote><img src="images/quote_bg.png" alt="" class="leftimg"/><p>We may have to bite the bullet and cut down on our expenses — Возможно, мы будем вынуждены решиться и ввести режим экономии.</p></blockquote>
-            </div>
-            <!--end post-->
-
-            <div class="post-line"></div>
             <ul class="post-navigation">
                 <li><a href="slang.html">&laquo; Сленг</a></li>
-            </ul>
 
-
-            <ul class="post-navigation">
                 <li><a href="lazy_person.html">&laquo; Для лентяев</a></li>
             </ul>
         </div>

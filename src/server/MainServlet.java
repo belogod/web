@@ -1,8 +1,6 @@
 package server;
 
-import beans.BookService;
-import beans.ClientService;
-import beans.TeacherService;
+import beans.*;
 import tables.Teacher;
 
 import javax.ejb.EJB;
@@ -23,6 +21,10 @@ public class MainServlet extends HttpServlet {
     BookService bs;
     @EJB
     TeacherService ts;
+    @EJB
+    InterestingService is;
+    @EJB
+    PageService ps;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -62,6 +64,7 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/reviews.jsp").forward(request,response);
         }
         else if (servletPath.contains("interesting.html")){
+            request.setAttribute("interestings", is.findAll());
             request.getRequestDispatcher("/interesting.jsp").forward(request,response);
         }
         else if (servletPath.contains("slang.html")){
@@ -75,6 +78,12 @@ public class MainServlet extends HttpServlet {
         }
         else if (servletPath.contains("bite-the-bullet.html")){
             request.getRequestDispatcher("/bite-the-bullet.jsp").forward(request,response);
+        } else {
+            String requestURI = request.getRequestURI();
+            int p = requestURI.lastIndexOf("/");
+            String link = requestURI.substring(p+1);
+            request.setAttribute("txt",link);
+            request.getRequestDispatcher("/none.jsp").forward(request,response);
         }
     }
 
