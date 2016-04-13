@@ -18,8 +18,6 @@ public class MainServlet extends HttpServlet {
     @EJB
     ClientService cs;
     @EJB
-    BookService bs;
-    @EJB
     TeacherService ts;
     @EJB
     InterestingService is;
@@ -47,9 +45,16 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/contact.jsp").forward(request,response);
         }
         else if (servletPath.contains("teacher_resume.html")){
-            List<Teacher> teachers = ts.findAll();
-            request.setAttribute("teachers", teachers);
-            request.getRequestDispatcher("/teacher_resume.jsp").forward(request,response);
+            String teachers_by_aid = request.getParameter("teachers_by_aid");
+            try {
+                Integer aid = Integer.valueOf(teachers_by_aid);
+                Teacher teacher = ts.find(aid);
+                request.setAttribute("teacher", teacher);
+                request.getRequestDispatcher("/teacher_resume.jsp").forward(request, response);
+            } catch (NumberFormatException ex) {
+                request.getRequestDispatcher("/teacher_resume.jsp").forward(request,response);
+            }
+
         }
 
         else if (servletPath.contains("teacher.html")){

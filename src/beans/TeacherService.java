@@ -24,6 +24,9 @@ public class TeacherService {
         return em.find(Teacher.class, id);
     }
 
+
+
+
     public List<Teacher> findAll() {
         return em.createNamedQuery("Teacher.findAll").getResultList();
     }
