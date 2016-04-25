@@ -22,7 +22,7 @@
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
                 <li><a href="teacher.html">Преподаватели</a></li>
                 <li><a href="study.html">Расписание</a></li>
-                <li><a href="">Обучение</a>
+                <li><a>Обучение</a>
                     <ul class="sub-menu">
                         <li><a href="interesting.html">Это интересно</a></li>
                         <li><a href="slang.html">Сленг</a></li>
@@ -37,7 +37,25 @@
     </div>
     <!--end header-->
     <div class="page-headline">Для лентяев</div>
+    <div id="main">
+        <div id="content">
+            <%--  Извлекаем из БД  Таблица: interesting --%>
+            <c:forEach items="${interestings}" var="interesting">
+                <h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
+                <c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
+                <p><c:out value="${interesting.text}" escapeXml="false" /></p>
+                <div class="post-line"></div>
+            </c:forEach>
 
+            <ul class="post-navigation">
+                <li><a href="interesting.html">&laquo; Это интересно</a></li>
+
+                <li><a href="slang.html">&laquo; Слэнг</a></li>
+            </ul>
+        </div>
+        <!--end content-->
+
+    </div>
 </div>
 
 </body>

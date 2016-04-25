@@ -1,6 +1,7 @@
 package server;
 
 import beans.*;
+import tables.Interesting;
 import tables.Teacher;
 
 import javax.ejb.EJB;
@@ -37,7 +38,7 @@ public class MainServlet extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
         if (servletPath.contains("command.html")) {
-             request.getRequestDispatcher("/command.jsp").forward(request,response);
+            request.getRequestDispatcher("/command.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
             request.getRequestDispatcher("/main.jsp").forward(request,response);
         }
@@ -45,14 +46,14 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/contact.jsp").forward(request,response);
         }
         else if (servletPath.contains("teacher_resume.html")){
-            String teachers_by_aid = request.getParameter("teachers_by_aid");
+            String tid = request.getParameter("tid");
             try {
-                Integer aid = Integer.valueOf(teachers_by_aid);
+                Integer aid = Integer.valueOf(tid);
                 Teacher teacher = ts.find(aid);
                 request.setAttribute("teacher", teacher);
                 request.getRequestDispatcher("/teacher_resume.jsp").forward(request, response);
             } catch (NumberFormatException ex) {
-                request.getRequestDispatcher("/teacher_resume.jsp").forward(request,response);
+                response.sendRedirect("teacher.html");
             }
 
         }
@@ -69,13 +70,15 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/reviews.jsp").forward(request,response);
         }
         else if (servletPath.contains("interesting.html")){
-            request.setAttribute("interestings", is.findAll());
+            request.setAttribute("interestings", is.findByType(Interesting.INTERESTING));
             request.getRequestDispatcher("/interesting.jsp").forward(request,response);
         }
         else if (servletPath.contains("slang.html")){
+            request.setAttribute("interestings", is.findByType(Interesting.SLANG));
             request.getRequestDispatcher("/slang.jsp").forward(request,response);
         }
         else if (servletPath.contains("lazy_person.html")){
+            request.setAttribute("interestings", is.findByType(Interesting.LAZY));
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
         else if (servletPath.contains("piece-of-cake.html")){

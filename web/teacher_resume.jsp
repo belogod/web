@@ -23,11 +23,11 @@
                 <li class="current_page_item"><a href="index.html">Главная</a></li>
                 <li><a href="teacher.html">Преподаватели</a></li>
                 <li><a href="study.html">Расписание</a></li>
-                <li><a href="">Обучение</a>
+                <li><a>Обучение</a>
                     <ul class="sub-menu">
                         <li><a href="interesting.html">Это интересно</a></li>
                         <li><a href="slang.html">Сленг</a></li>
-                        <li><a href="lazy_person.html">Для лентяенв</a></li>
+                        <li><a href="lazy_person.html">Для лентяев</a></li>
                     </ul>
                 <li><a href="command.html">Наша команда</a></li>
                 <li><a href="reviews.html">Отзывы</a></li>
@@ -40,18 +40,12 @@
 
     <div class="page-headline"></div>
     <div id="main">
-        <table border="1">
-            <thead>
-            <th>Фамилия</th><th>Имя</th><th>Телефон</th>
-            </thead>
-            <tbody>
-            <c:forEach var="teacher" items="${teachers}">
-                <tr>
-                    <td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+        <ul>
+            <li>${teacher.name}</li>
+            <li>${teacher.lastName}</li>
+            <li>${teacher.phone}</li>
+
+        </ul>
 
     </div>
     <!--end wrap-->

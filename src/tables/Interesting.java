@@ -8,9 +8,14 @@ import java.util.Objects;
  */
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Interesting.findAll", query = "select i from Interesting i")
+        @NamedQuery(name = "Interesting.findAll", query = "select i from Interesting i"),
+        @NamedQuery(name = "Interesting.findByType", query = "select i from Interesting i where i.type=:type")
 })
 public class Interesting {
+    public final static Integer INTERESTING = 1;
+    public final static Integer SLANG = 2;
+    public final static Integer LAZY = 3;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -19,12 +24,14 @@ public class Interesting {
     @Lob
     private String text;
     private String url;
+    private Integer type;
 
-    public Interesting(String title, String picture, String text, String url) {
+    public Interesting(String title, String picture, String text, String url, Integer type) {
         this.title = title;
         this.picture = picture;
         this.text = text;
         this.url = url;
+        this.type = type;
     }
 
     public Interesting() {
@@ -70,19 +77,24 @@ public class Interesting {
         this.url = url;
     }
 
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Interesting)) return false;
         Interesting that = (Interesting) o;
-        return id == that.id &&
-                Objects.equals(title, that.title) &&
-                Objects.equals(picture, that.picture) &&
-                Objects.equals(text, that.text);
+        return id == that.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, picture, text);
+        return Objects.hash(id);
     }
 }

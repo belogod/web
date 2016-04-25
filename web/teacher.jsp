@@ -23,11 +23,11 @@
             <li class="current_page_item"><a href="index.html">Главная</a></li>
             <li><a href="teacher.html">Преподаватели</a></li>
             <li><a href="study.html">Расписание</a></li>
-            <li><a href="">Обучение</a>
+            <li><a>Обучение</a>
                 <ul class="sub-menu">
                     <li><a href="interesting.html">Это интересно</a></li>
                     <li><a href="slang.html">Сленг</a></li>
-                    <li><a href="lazy_person.html">Для лентяенв</a></li>
+                    <li><a href="lazy_person.html">Для лентяев</a></li>
                 </ul>
             <li><a href="command.html">Наша команда</a></li>
             <li><a href="reviews.html">Отзывы</a></li>
@@ -51,7 +51,8 @@
                         </a>
                     </td>
                     <td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>
-                    <img src="images/phone.png"> ${teacher.phone}</td>
+                    <img src="images/phone.png"> ${teacher.phone}
+                    <br>${teacher.email}</td>
                 </tr>
         <%--<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
             </c:forEach>
