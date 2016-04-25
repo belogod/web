@@ -40,18 +40,12 @@
 
     <div class="page-headline"></div>
     <div id="main">
-        <table border="1">
-            <thead>
-            <th>Фамилия</th><th>Имя</th><th>Телефон</th>
-            </thead>
-            <tbody>
-            <c:forEach var="teacher" items="${teachers}">
-                <tr>
-                    <td>${teacher.lastName}</td><td>${teacher.name}</td><td>${teacher.phone}</td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+        <ul>
+            <li>${teacher.name}</li>
+            <li>${teacher.lastName}</li>
+            <li>${teacher.phone}</li>
+            <li>${teacher.about}</li>
+        </ul>
 
     </div>
     <!--end wrap-->

@@ -18,6 +18,7 @@ public class Teacher {
     private String name;
     private String phone;
     private String pictureFileName;
+    private String about;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
@@ -28,11 +29,12 @@ public class Teacher {
     private Collection<Review> reviews;
 
 
-    public Teacher(String lastName, String name, String phone, String pictureFileName) {
+    public Teacher(String lastName, String name, String phone, String pictureFileName, String about) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
         this.pictureFileName = pictureFileName;
+        this.about = about;
     }
 
     public Teacher() {
@@ -78,6 +80,14 @@ public class Teacher {
         this.pictureFileName = pictureFileName;
     }
 
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
     @Override
     public String toString() {
         return "Teacher{" +
@@ -93,15 +103,12 @@ public class Teacher {
         if (this == o) return true;
         if (!(o instanceof Teacher)) return false;
         Teacher teacher = (Teacher) o;
-        return Objects.equals(id, teacher.id) &&
-                Objects.equals(lastName, teacher.lastName) &&
-                Objects.equals(name, teacher.name) &&
-                Objects.equals(phone, teacher.phone);
+        return Objects.equals(id, teacher.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, lastName, name, phone);
+        return Objects.hash(id);
     }
 
     public Collection<Gruppa> getGrupps() {

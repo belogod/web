@@ -15,16 +15,14 @@ public class TeacherService {
     @PersistenceContext
     EntityManager em;
 
-    public Teacher create(String lastName, String name, String phone, String pictureFileName) {
-        Teacher teacher = new Teacher(lastName,name,phone,pictureFileName);
+    public Teacher create(String lastName, String name, String phone, String pictureFileName, String about) {
+        Teacher teacher = new Teacher(lastName,name,phone,pictureFileName,about);
         em.persist(teacher);
         return teacher;
     }
     public Teacher find(Integer id) {
         return em.find(Teacher.class, id);
     }
-
-
 
 
     public List<Teacher> findAll() {

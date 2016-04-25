@@ -19,4 +19,8 @@ public class InterestingService {
     public List<Interesting> findAll() {
         return em.createNamedQuery("Interesting.findAll").getResultList();
     }
+
+    public List<Interesting> findByType(int type) {
+        return em.createNamedQuery("Interesting.findByType").setParameter("type", type).getResultList();
+    }
 }

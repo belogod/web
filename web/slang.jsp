@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -37,7 +38,25 @@
     </div>
     <!--end header-->
     <div class="page-headline">Сленг</div>
+    <div id="main">
+        <div id="content">
+            <%--  Извлекаем из БД  Таблица: interesting --%>
+            <c:forEach items="${interestings}" var="interesting">
+                <h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
+                <c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
+                <p><c:out value="${interesting.text}" escapeXml="false" /></p>
+                <div class="post-line"></div>
+            </c:forEach>
 
+            <ul class="post-navigation">
+                <li><a href="interesting.html">&laquo; Это интересно</a></li>
+
+                <li><a href="lazy_person.html">&laquo; Для лентяев</a></li>
+            </ul>
+        </div>
+        <!--end content-->
+
+    </div>
 </div>
 
 </body>

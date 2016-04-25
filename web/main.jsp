@@ -18,12 +18,6 @@
     <!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
 
 
-
-
-
-
-
-
 </head>
 <body class="home">
 <div id="wrap">
