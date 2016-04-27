@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b33597e7-e3cc-4f16-b74f-e79a7f6d7c41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/beans/CommandService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tables/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/Yin_and_yang.png" afterPath="$PROJECT_DIR$/web/images/Yin_and_yang.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/fancybox/Thumbs.db" afterPath="$PROJECT_DIR$/web/images/fancybox/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/MainServlet.java" afterPath="$PROJECT_DIR$/src/server/MainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tables/Teacher.java" afterPath="$PROJECT_DIR$/src/tables/Teacher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/command.jsp" afterPath="$PROJECT_DIR$/web/command.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/interesting.jsp" afterPath="$PROJECT_DIR$/web/interesting.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main.jsp" afterPath="$PROJECT_DIR$/web/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/base.css" afterPath="$PROJECT_DIR$/web/styles/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/style.css" afterPath="$PROJECT_DIR$/web/styles/style.css" />
-    </list>
+    <list default="true" id="b33597e7-e3cc-4f16-b74f-e79a7f6d7c41" name="Default" comment="" />
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -868,7 +853,7 @@
       <workItem from="1461349732419" duration="2629000" />
       <workItem from="1461600844977" duration="1596000" />
       <workItem from="1461603001977" duration="4645000" />
-      <workItem from="1461775600921" duration="12352000" />
+      <workItem from="1461775600921" duration="12391000" />
     </task>
     <task id="LOCAL-00001" summary="11.03">
       <created>1457729532827</created>
@@ -1010,11 +995,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461607438671</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="25,04">
+      <created>1461789630269</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1461789630269</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167395000" />
+    <option name="totallyTimeSpent" value="167434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1028" height="744" extended-state="0" />
