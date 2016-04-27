@@ -30,8 +30,11 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher")
     private Collection<Review> reviews;
 
+    @OneToMany (mappedBy = "teacher")
+    private Collection<Command> commands;
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, Collection<Gruppa> grupps, Collection<Review> reviews) {
+
+    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
@@ -41,6 +44,7 @@ public class Teacher {
         this.pictureFileName = pictureFileName;
         this.grupps = grupps;
         this.reviews = reviews;
+        this.commands = commands;
     }
 
     public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName) {
@@ -126,6 +130,7 @@ public class Teacher {
                 ", pictureFileName='" + pictureFileName + '\'' +
                 ", grupps=" + grupps +
                 ", reviews=" + reviews +
+                ", commands=" + commands +
                 '}';
     }
 
@@ -146,7 +151,8 @@ public class Teacher {
         if (pictureFileName != null ? !pictureFileName.equals(teacher.pictureFileName) : teacher.pictureFileName != null)
             return false;
         if (grupps != null ? !grupps.equals(teacher.grupps) : teacher.grupps != null) return false;
-        return reviews != null ? reviews.equals(teacher.reviews) : teacher.reviews == null;
+        if (reviews != null ? !reviews.equals(teacher.reviews) : teacher.reviews != null) return false;
+        return commands != null ? commands.equals(teacher.commands) : teacher.commands == null;
 
     }
 
@@ -162,8 +168,11 @@ public class Teacher {
         result = 31 * result + (pictureFileName != null ? pictureFileName.hashCode() : 0);
         result = 31 * result + (grupps != null ? grupps.hashCode() : 0);
         result = 31 * result + (reviews != null ? reviews.hashCode() : 0);
+        result = 31 * result + (commands != null ? commands.hashCode() : 0);
         return result;
     }
+
+
 
     public Collection<Gruppa> getGrupps() {
         return grupps;
@@ -181,5 +190,11 @@ public class Teacher {
         this.reviews = reviews;
     }
 
+    public Collection<Command> getCommands() {
+        return commands;
+    }
 
+    public void setCommands(Collection<Command> commands) {
+        this.commands = commands;
+    }
 }

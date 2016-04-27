@@ -1,16 +1,18 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Наша команда</title>
     <%--<meta charset="utf-8">--%>
-    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
     <%--<!--[if IE 6]>--%>
     <script src="js/ie6-transparency.js"></script>
     <script>DD_belatedPNG.fix('#header img, #featured-section h2, #circles img, #frontpage-sidebar .read-more, .blue-bullets li, #sidebar .sidebar-button, #project-content .read-more, .more-link, #contact-form .submit, .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal, #commentform .submit');</script>
-    <link rel="stylesheet" href="styles/ie6.css" />
+    <link rel="stylesheet" href="styles/ie6.css"/>
 
-    <link rel="stylesheet" href="styles/ie7.css" />
-    <link rel="stylesheet" href="styles/ie8.css" />
+    <link rel="stylesheet" href="styles/ie7.css"/>
+    <link rel="stylesheet" href="styles/ie8.css"/>
 
 
     <link rel="stylesheet" type="text/css" href="styles/clearfix.css">
@@ -45,8 +47,6 @@
     <div class="page-headline">Портфолио</div>
 
 
-
-
     <div id="wrapper">
 
         <div id="main" class="clearfix">
@@ -55,21 +55,22 @@
 
             <ul id="pageTabs">
                 <li class="selected"><a rel="all" href="#">All</a></li>
-                <li><a rel="natali" href="#">Natali</a></li>
-                <li><a rel="iren" href="#">Iren</a></li>
+
+                <c:forEach var="command" items="${commands}">
+                    <li><a rel="${command.teacher.name}" href="#">${command.teacher.name}</a></li>
+                </c:forEach>
+
             </ul>
 
             <ul class="work fullWork clearfix">
-                <li id="id1" class="natali"><a href="picture/1.jpg" class="gallery" rel="films" title="This is image C"><img src="picture/11.jpg" alt="" /></a></li>
-                <li id="id2" class="natali"><a href="picture/2.JPG" class="gallery" rel="films" title="This is image D"><img src="picture/12.JPG" alt="" /></a></li>
-                <li id="id3" class="natali"><a href="picture/3.JPG" class="gallery" rel="films" title="This is image E"><img src="picture/13.JPG" alt="" /></a></li>
-                <li id="id4" class="natali"><a href="picture/4.jpg" class="gallery" rel="films" title="This is image F"><img src="picture/14.jpg" alt="" /></a></li>
-                <li id="id5" class="natali"><a href="picture/5.JPG" class="gallery" rel="films" title="This is image G"><img src="picture/15.JPG" alt="" /></a></li>
-                <li id="id6" class="natali"><a href="picture/6.JPG" class="gallery" rel="films" title="This is image H"><img src="picture/16.JPG" alt="" /></a></li>
-                <li id="id7" class="natali"><a href="picture/7.JPG" class="gallery" rel="films" title="This is image I"><img src="picture/17.JPG" alt="" /></a></li>
-                <li id="id8" class="iren"><a href="picture/8.JPG" class="gallery" rel="tv" title="This is image J"><img src="picture/18.JPG" alt="" /></a></li>
-                <li id="id9" class="iren"><a href="picture/9.JPG" class="gallery" rel="tv" title="This is image K"><img src="picture/19.JPG" alt="" /></a></li>
-                <li id="id10" class="iren"><a href="picture/10.JPG" class="gallery" rel="tv" title="This is image L"><img src="picture/20.JPG" alt="" /></a></li>
+
+                <c:forEach var="command" items="${commands}">
+
+                    <li id="id1" class="${command.teacher.name}"><a href="picture/${command.img}" class="gallery"
+                                                                    rel="1"><img src="picture/${command.image}" alt=""/></a>
+                    </li>
+
+                </c:forEach>
             </ul>
 
 
@@ -78,13 +79,6 @@
     </div>
 
 </div><!-- #wrapper -->
-
-
-
-
-
-
-
 
 
 <script type="text/javascript" src="js/jquery.livequery.js"></script>

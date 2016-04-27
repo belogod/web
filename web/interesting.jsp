@@ -45,9 +45,10 @@
         <div id="content">
             <%--  Извлекаем из БД  Таблица: interesting --%>
             <c:forEach items="${interestings}" var="interesting">
-                <h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
-                <c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
-                <p><c:out value="${interesting.text}" escapeXml="false" /></p>
+                <br><h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
+                <br><c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
+                <br><p><c:out value="${interesting.text}" escapeXml="false" /></p>
+                <a class="read-more" href="${interesting.url}">Читать далее &raquo;</a></div>
                 <div class="post-line"></div>
             </c:forEach>
 

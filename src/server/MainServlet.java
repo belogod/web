@@ -1,6 +1,7 @@
 package server;
 
 import beans.*;
+import tables.Command;
 import tables.Interesting;
 import tables.Teacher;
 
@@ -24,6 +25,8 @@ public class MainServlet extends HttpServlet {
     InterestingService is;
     @EJB
     PageService ps;
+    @EJB
+    CommandService cos;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -38,8 +41,15 @@ public class MainServlet extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
         if (servletPath.contains("command.html")) {
+            List<Command> commands = cos.findAll();
+            request.setAttribute("commands", commands);
             request.getRequestDispatcher("/command.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
+            List<Command> commands = cos.findAll();
+            request.setAttribute("commands", commands);
+
+            List<Interesting> interestings = is.findAll();
+            request.setAttribute("interestings", interestings);
             request.getRequestDispatcher("/main.jsp").forward(request,response);
         }
         else if (servletPath.contains("contact.html")){
