@@ -40,25 +40,43 @@
 
     <div class="page-headline">Преподаватели</div>
     <div id="main">
-        <table>
+        <%--<table>--%>
 
-            <tbody>
+            <%--<tbody>--%>
+            <%--<c:forEach var="teacher" items="${teachers}">--%>
+                <%--<tr>--%>
+                    <%--<td>--%>
+                        <%--<a href="teacher_resume.html?tid=${teacher.id}">--%>
+                        <%--<img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>--%>
+                        <%--</a>--%>
+                    <%--</td>--%>
+                    <%--<td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>--%>
+                    <%--<img src="images/phone.png"> ${teacher.phone}--%>
+                    <%--<br>${teacher.email}</td>--%>
+                <%--</tr>--%>
+        <%--&lt;%&ndash;<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>&ndash;%&gt;--%>
+            <%--</c:forEach>--%>
+            <%--</tbody>--%>
+        <%--</table>--%>
+
+
+
             <c:forEach var="teacher" items="${teachers}">
+            <p></p><table class="table_price">
+
+    <caption>${teacher.lastName} ${teacher.name}<br></caption>
                 <tr>
-                    <td>
-                        <a href="teacher_resume.html?tid=${teacher.id}">
-                        <img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
-                        </a>
-                    </td>
-                    <td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>
-                    <img src="images/phone.png"> ${teacher.phone}
+                    <td><img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
+                    <p><br><a href="teacher_resume.html?tid=${teacher.id}">Просмотреть резюме</a></td>
+                    <td>Дата рождения : ${teacher.age}
+                    <br>${teacher.phone}
                     <br>${teacher.email}</td>
                 </tr>
-        <%--<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+
+            </table>
             </c:forEach>
-            </tbody>
-        </table>
-</div>
+
+    </div>
 <!--end wrap-->
     </div>
 </body>

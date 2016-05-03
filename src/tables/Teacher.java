@@ -21,6 +21,7 @@ public class Teacher {
     private String diploma;
     private String experience;
     private String pictureFileName;
+    private String age;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
@@ -34,7 +35,7 @@ public class Teacher {
     private Collection<Command> commands;
 
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
+    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, String age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
@@ -42,12 +43,13 @@ public class Teacher {
         this.diploma = diploma;
         this.experience = experience;
         this.pictureFileName = pictureFileName;
+        this.age = age;
         this.grupps = grupps;
         this.reviews = reviews;
         this.commands = commands;
     }
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName) {
+    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, String age) {
     }
 
     public Teacher() {
@@ -117,6 +119,14 @@ public class Teacher {
         this.experience = experience;
     }
 
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "Teacher{" +
@@ -131,6 +141,7 @@ public class Teacher {
                 ", grupps=" + grupps +
                 ", reviews=" + reviews +
                 ", commands=" + commands +
+                ", age=" + age +
                 '}';
     }
 
@@ -150,6 +161,7 @@ public class Teacher {
         if (experience != null ? !experience.equals(teacher.experience) : teacher.experience != null) return false;
         if (pictureFileName != null ? !pictureFileName.equals(teacher.pictureFileName) : teacher.pictureFileName != null)
             return false;
+        if (age != null ? !age.equals(teacher.age) : teacher.age != null) return false;
         if (grupps != null ? !grupps.equals(teacher.grupps) : teacher.grupps != null) return false;
         if (reviews != null ? !reviews.equals(teacher.reviews) : teacher.reviews != null) return false;
         return commands != null ? commands.equals(teacher.commands) : teacher.commands == null;
@@ -166,13 +178,12 @@ public class Teacher {
         result = 31 * result + (diploma != null ? diploma.hashCode() : 0);
         result = 31 * result + (experience != null ? experience.hashCode() : 0);
         result = 31 * result + (pictureFileName != null ? pictureFileName.hashCode() : 0);
+        result = 31 * result + (age != null ? age.hashCode() : 0);
         result = 31 * result + (grupps != null ? grupps.hashCode() : 0);
         result = 31 * result + (reviews != null ? reviews.hashCode() : 0);
         result = 31 * result + (commands != null ? commands.hashCode() : 0);
         return result;
     }
-
-
 
     public Collection<Gruppa> getGrupps() {
         return grupps;

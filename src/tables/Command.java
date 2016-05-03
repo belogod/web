@@ -20,14 +20,16 @@ public class Command {
     private Integer id;
     private String img;
     private String image;
+    private String comment;
 
 
     @ManyToOne(optional = false)
     private Teacher teacher;
 
-    public Command(String img, String image) {
+    public Command(String img, String image, String comment) {
         this.img = img;
         this.image = image;
+        this.comment = comment;
     }
 
     public Command() {
@@ -57,7 +59,13 @@ public class Command {
         this.image = image;
     }
 
+    public String getComment() {
+        return comment;
+    }
 
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -68,7 +76,9 @@ public class Command {
 
         if (id != null ? !id.equals(command.id) : command.id != null) return false;
         if (img != null ? !img.equals(command.img) : command.img != null) return false;
-        return image != null ? image.equals(command.image) : command.image == null;
+        if (image != null ? !image.equals(command.image) : command.image != null) return false;
+        if (comment != null ? !comment.equals(command.comment) : command.comment != null) return false;
+        return teacher != null ? teacher.equals(command.teacher) : command.teacher == null;
 
     }
 
@@ -77,11 +87,10 @@ public class Command {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (img != null ? img.hashCode() : 0);
         result = 31 * result + (image != null ? image.hashCode() : 0);
+        result = 31 * result + (comment != null ? comment.hashCode() : 0);
+        result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
         return result;
     }
-
-
-
 
     public Teacher getTeacher() {
         return teacher;

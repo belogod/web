@@ -15,8 +15,8 @@ public class TeacherService {
     @PersistenceContext
     EntityManager em;
 
-    public Teacher create(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName) {
-        Teacher teacher = new Teacher(lastName,name,phone,email,diploma,experience,pictureFileName);
+    public Teacher create(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, String age) {
+        Teacher teacher = new Teacher(lastName,name,phone,email,diploma,experience,pictureFileName,age);
         em.persist(teacher);
         return teacher;
     }

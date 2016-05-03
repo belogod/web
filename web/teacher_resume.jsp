@@ -40,12 +40,29 @@
 
     <div class="page-headline"></div>
     <div id="main">
-        <ul>
-            <li>${teacher.name}</li>
-            <li>${teacher.lastName}</li>
-            <li>${teacher.phone}</li>
+        <%--<ul>--%>
+            <%--<li>${teacher.name}</li>--%>
+            <%--<li>${teacher.lastName}</li>--%>
+            <%--<li>${teacher.phone}</li>--%>
 
-        </ul>
+        <%--</ul>--%>
+
+
+
+            <table>
+
+                <tbody>
+                    <tr>
+                        <td>
+                                <img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
+                        </td>
+                        <td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>
+                            <img src="images/phone.png"> ${teacher.phone}
+                            <br>${teacher.email}</td>
+                    </tr>
+                    <%--<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>--%>
+                </tbody>
+            </table>
 
     </div>
     <!--end wrap-->
