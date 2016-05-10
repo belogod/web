@@ -56,7 +56,7 @@
                         <td>
                                 <img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
                         </td>
-                        <td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>
+                        <td class="teacher-lastname" id="about">${teacher.lastName}<br/>${teacher.name}<br/>
                             <img src="images/phone.png"> ${teacher.phone}
                             <br>${teacher.email}</td>
                     </tr>

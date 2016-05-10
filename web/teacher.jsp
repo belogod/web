@@ -68,7 +68,7 @@
                 <tr>
                     <td><img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
                     <p><br><a href="teacher_resume.html?tid=${teacher.id}">Просмотреть резюме</a></td>
-                    <td>Дата рождения : ${teacher.age}
+                    <td id="about">Дата рождения : ${teacher.age}
                     <br>${teacher.phone}
                     <br>${teacher.email}</td>
                 </tr>

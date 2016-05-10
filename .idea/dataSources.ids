@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - webenglish@localhost" uuid="8c132df8-66de-41ac-9d28-21c26bbb3161">
-    <database-info product="MySQL" version="5.5.5-10.1.8-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+    <database-info product="MySQL" version="5.5.5-10.1.9-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
@@ -42,17 +42,17 @@
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="17" parent="3" name="IMAGE">
+      <column id="17" parent="3" name="COMMENT">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="18" parent="3" name="IMG">
+      <column id="18" parent="3" name="IMAGE">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="19" parent="3" name="TEACHER_ID">
+      <column id="19" parent="3" name="IMG">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="TEACHER_ID">
         <data-type>int(11)</data-type>
-      </column>
-      <column id="20" parent="3" name="COMMENT">
-        <data-type>varchar(200)</data-type>
       </column>
       <index id="21" parent="3" name="FK_COMMAND_TEACHER_ID">
         <columns>TEACHER_ID</columns>
@@ -209,29 +209,29 @@ grupps_ID</columns>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="59" parent="9" name="DIPLOMA">
+      <column id="59" parent="9" name="AGE">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="60" parent="9" name="DIPLOMA">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="61" parent="9" name="EMAIL">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="60" parent="9" name="EMAIL">
+      <column id="62" parent="9" name="EXPERIENCE">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="61" parent="9" name="EXPERIENCE">
+      <column id="63" parent="9" name="LASTNAME">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="62" parent="9" name="LASTNAME">
+      <column id="64" parent="9" name="NAME">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="63" parent="9" name="NAME">
-        <data-type>varchar(255)</data-type>
+      <column id="65" parent="9" name="PHONE">
+        <data-type>varchar(20)</data-type>
       </column>
-      <column id="64" parent="9" name="PHONE">
+      <column id="66" parent="9" name="PICTUREFILENAME">
         <data-type>varchar(255)</data-type>
-      </column>
-      <column id="65" parent="9" name="PICTUREFILENAME">
-        <data-type>varchar(255)</data-type>
-      </column>
-      <column id="66" parent="9" name="AGE">
-        <data-type>varchar(10)</data-type>
       </column>
       <key id="67" parent="9" name="PRIMARY">
         <columns>ID</columns>
