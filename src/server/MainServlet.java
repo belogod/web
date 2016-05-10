@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+import static java.util.stream.Collectors.toList;
+
 
 @WebServlet(name = "MainServlet", urlPatterns = {"*.html"})
 public class MainServlet extends HttpServlet {
@@ -42,7 +44,9 @@ public class MainServlet extends HttpServlet {
         String servletPath = request.getServletPath();
         if (servletPath.contains("command.html")) {
             List<Command> commands = cos.findAll();
+            List<String> names = commands.stream().map(c -> c.getTeacher().getName()).distinct().collect(toList());
             request.setAttribute("commands", commands);
+            request.setAttribute("names", names);
             request.getRequestDispatcher("/command.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
             List<Command> commands = cos.findAll();

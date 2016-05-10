@@ -16,12 +16,14 @@ public class Teacher {
     private Integer id;
     private String lastName;
     private String name;
+    @Column(length = 20)
     private String phone;
     private String email;
+    @Column(length = 25)
     private String diploma;
     private String experience;
     private String pictureFileName;
-    private String age;
+    private int age;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
@@ -35,7 +37,7 @@ public class Teacher {
     private Collection<Command> commands;
 
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, String age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
+    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
@@ -119,11 +121,11 @@ public class Teacher {
         this.experience = experience;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -145,45 +147,6 @@ public class Teacher {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Teacher teacher = (Teacher) o;
-
-        if (id != null ? !id.equals(teacher.id) : teacher.id != null) return false;
-        if (lastName != null ? !lastName.equals(teacher.lastName) : teacher.lastName != null) return false;
-        if (name != null ? !name.equals(teacher.name) : teacher.name != null) return false;
-        if (phone != null ? !phone.equals(teacher.phone) : teacher.phone != null) return false;
-        if (email != null ? !email.equals(teacher.email) : teacher.email != null) return false;
-        if (diploma != null ? !diploma.equals(teacher.diploma) : teacher.diploma != null) return false;
-        if (experience != null ? !experience.equals(teacher.experience) : teacher.experience != null) return false;
-        if (pictureFileName != null ? !pictureFileName.equals(teacher.pictureFileName) : teacher.pictureFileName != null)
-            return false;
-        if (age != null ? !age.equals(teacher.age) : teacher.age != null) return false;
-        if (grupps != null ? !grupps.equals(teacher.grupps) : teacher.grupps != null) return false;
-        if (reviews != null ? !reviews.equals(teacher.reviews) : teacher.reviews != null) return false;
-        return commands != null ? commands.equals(teacher.commands) : teacher.commands == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (phone != null ? phone.hashCode() : 0);
-        result = 31 * result + (email != null ? email.hashCode() : 0);
-        result = 31 * result + (diploma != null ? diploma.hashCode() : 0);
-        result = 31 * result + (experience != null ? experience.hashCode() : 0);
-        result = 31 * result + (pictureFileName != null ? pictureFileName.hashCode() : 0);
-        result = 31 * result + (age != null ? age.hashCode() : 0);
-        result = 31 * result + (grupps != null ? grupps.hashCode() : 0);
-        result = 31 * result + (reviews != null ? reviews.hashCode() : 0);
-        result = 31 * result + (commands != null ? commands.hashCode() : 0);
-        return result;
-    }
 
     public Collection<Gruppa> getGrupps() {
         return grupps;
@@ -207,5 +170,18 @@ public class Teacher {
 
     public void setCommands(Collection<Command> commands) {
         this.commands = commands;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Teacher)) return false;
+        Teacher teacher = (Teacher) o;
+        return Objects.equals(id, teacher.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

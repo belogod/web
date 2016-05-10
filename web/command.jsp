@@ -56,8 +56,8 @@
             <ul id="pageTabs">
                 <li class="selected"><a rel="all" href="#">All</a></li>
 
-                <c:forEach var="command" items="${commands}">
-                    <li><a rel="${command.teacher.name}" href="#">${command.teacher.name}</a></li>
+                <c:forEach var="name" items="${names}">
+                    <li><a rel="${name}" href="#">${name}</a></li>
                 </c:forEach>
 
             </ul>

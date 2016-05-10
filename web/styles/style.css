@@ -612,3 +612,7 @@ a:hover{
 	top: 2px;
 	left: 2px;
 }
+
+#about {
+	vertical-align: top;
+}
