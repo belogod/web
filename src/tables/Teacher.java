@@ -14,15 +14,17 @@ import java.util.Objects;
 public class Teacher {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(length = 20)
     private String lastName;
+    @Column(length = 15)
     private String name;
     @Column(length = 20)
     private String phone;
+    @Column(length = 100)
     private String email;
     @Column(length = 25)
-    private String diploma;
-    private String experience;
     private String pictureFileName;
+    @Column(length = 3)
     private int age;
 
     @OneToMany(mappedBy = "teacher")
@@ -37,13 +39,11 @@ public class Teacher {
     private Collection<Command> commands;
 
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
+    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
         this.email = email;
-        this.diploma = diploma;
-        this.experience = experience;
         this.pictureFileName = pictureFileName;
         this.age = age;
         this.grupps = grupps;
@@ -51,7 +51,7 @@ public class Teacher {
         this.commands = commands;
     }
 
-    public Teacher(String lastName, String name, String phone, String email, String diploma, String experience, String pictureFileName, String age) {
+    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, String age) {
     }
 
     public Teacher() {
@@ -105,21 +105,6 @@ public class Teacher {
         this.email = email;
     }
 
-    public String getDiploma() {
-        return diploma;
-    }
-
-    public void setDiploma(String diploma) {
-        this.diploma = diploma;
-    }
-
-    public String getExperience() {
-        return experience;
-    }
-
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
 
     public int getAge() {
         return age;
@@ -137,8 +122,6 @@ public class Teacher {
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
-                ", diploma='" + diploma + '\'' +
-                ", experience='" + experience + '\'' +
                 ", pictureFileName='" + pictureFileName + '\'' +
                 ", grupps=" + grupps +
                 ", reviews=" + reviews +

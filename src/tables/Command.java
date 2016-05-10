@@ -18,8 +18,11 @@ public class Command {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Integer id;
+    @Column(length = 100)
     private String img;
+    @Column(length = 100)
     private String image;
+    @Column(length = 100)
     private String comment;
 
 

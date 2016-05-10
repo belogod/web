@@ -15,12 +15,14 @@ public class Client {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 100)
+    @Column(length = 25)
     private String lastName;
+    @Column(length = 20)
     private String name;
 
     @Column(length = 20)
     private String phone;
+    @Column(length = 100)
     private String email;
 
     @ManyToMany(mappedBy = "clients")

@@ -13,8 +13,11 @@ import java.util.Objects;
 public class Gruppa {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(length = 100)
     private String title;
     private Date startDate;
+    @Lob
+    private String text;
 
     @ManyToOne
     private Teacher teacher;
@@ -22,9 +25,10 @@ public class Gruppa {
     @ManyToMany
     private List<Client> clients;
 
-    public Gruppa(String title, Date startDate) {
+    public Gruppa(String title, Date startDate, String text) {
         this.title = title;
         this.startDate = startDate;
+        this.text = text;
     }
 
     public Gruppa() {
@@ -54,6 +58,14 @@ public class Gruppa {
         this.startDate = startDate;
     }
 
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
     public Teacher getTeacher() {
         return teacher;
     }
@@ -70,18 +82,32 @@ public class Gruppa {
         this.clients = clients;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Gruppa)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
+
         Gruppa gruppa = (Gruppa) o;
-        return Objects.equals(id, gruppa.id) &&
-                Objects.equals(title, gruppa.title);
+
+        if (id != null ? !id.equals(gruppa.id) : gruppa.id != null) return false;
+        if (title != null ? !title.equals(gruppa.title) : gruppa.title != null) return false;
+        if (startDate != null ? !startDate.equals(gruppa.startDate) : gruppa.startDate != null) return false;
+        if (text != null ? !text.equals(gruppa.text) : gruppa.text != null) return false;
+        if (teacher != null ? !teacher.equals(gruppa.teacher) : gruppa.teacher != null) return false;
+        return clients != null ? clients.equals(gruppa.clients) : gruppa.clients == null;
+
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title);
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (startDate != null ? startDate.hashCode() : 0);
+        result = 31 * result + (text != null ? text.hashCode() : 0);
+        result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
+        result = 31 * result + (clients != null ? clients.hashCode() : 0);
+        return result;
     }
 
     @Override
@@ -89,6 +115,10 @@ public class Gruppa {
         return "Gruppa{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", startDate=" + startDate +
+                ", text='" + text + '\'' +
+                ", teacher=" + teacher +
+                ", clients=" + clients +
                 '}';
     }
 }

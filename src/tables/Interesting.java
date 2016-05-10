@@ -19,10 +19,13 @@ public class Interesting {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(length = 100)
     private String title;
+    @Column(length = 50)
     private String picture;
     @Lob
     private String text;
+    @Column(length = 100)
     private String url;
     private Integer type;
 
