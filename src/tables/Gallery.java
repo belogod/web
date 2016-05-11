@@ -1,41 +1,40 @@
 package tables;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 /**
  * Created by Belogod on 27.04.2016.
  */
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Command.findAll", query = "select cm from Command cm")
+        @NamedQuery(name = "Gallery.findAll", query = "select g from Gallery g")
 })
 
 
-public class Command {
+public class Gallery {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Integer id;
-    @Column(length = 100)
+    @Column(length = 50)
     private String img;
-    @Column(length = 100)
+    @Column(length = 50)
     private String image;
-    @Column(length = 100)
+    @Column(length = 50)
     private String comment;
 
 
     @ManyToOne(optional = false)
     private Teacher teacher;
 
-    public Command(String img, String image, String comment) {
+    public Gallery(String img, String image, String comment) {
         this.img = img;
         this.image = image;
         this.comment = comment;
     }
 
-    public Command() {
+    public Gallery() {
     }
 
     public Integer getId() {
@@ -75,13 +74,13 @@ public class Command {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Command command = (Command) o;
+        Gallery gallery = (Gallery) o;
 
-        if (id != null ? !id.equals(command.id) : command.id != null) return false;
-        if (img != null ? !img.equals(command.img) : command.img != null) return false;
-        if (image != null ? !image.equals(command.image) : command.image != null) return false;
-        if (comment != null ? !comment.equals(command.comment) : command.comment != null) return false;
-        return teacher != null ? teacher.equals(command.teacher) : command.teacher == null;
+        if (id != null ? !id.equals(gallery.id) : gallery.id != null) return false;
+        if (img != null ? !img.equals(gallery.img) : gallery.img != null) return false;
+        if (image != null ? !image.equals(gallery.image) : gallery.image != null) return false;
+        if (comment != null ? !comment.equals(gallery.comment) : gallery.comment != null) return false;
+        return teacher != null ? teacher.equals(gallery.teacher) : gallery.teacher == null;
 
     }
 

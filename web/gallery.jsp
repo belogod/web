@@ -36,7 +36,7 @@
                         <li><a href="slang.html">Сленг</a></li>
                         <li><a href="lazy_person.html">Для лентяев</a></li>
                     </ul>
-                <li><a href="command.html">Наша команда</a></li>
+                <li><a href="gallery.html">Наша команда</a></li>
                 <li><a href="reviews.html">Отзывы</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
@@ -44,7 +44,7 @@
         <!--end nav-->
     </div>
     <!--end header-->
-    <div class="page-headline">Портфолио</div>
+    <div class="page-headline">Галерея</div>
 
 
     <div id="wrapper">
@@ -64,10 +64,10 @@
 
             <ul class="work fullWork clearfix">
 
-                <c:forEach var="command" items="${commands}">
+                <c:forEach var="gallery" items="${galleries}">
 
-                    <li id="id1" class="${command.teacher.name}"><a href="picture/${command.img}" class="gallery"
-                                                                    rel="1" title="${command.comment}"><img src="picture/${command.image}" alt=""/></a>
+                    <li id="id1" class="${gallery.teacher.name}"><a href="picture/${gallery.img}" class="gallery"
+                                                                    rel="1" title="${gallery.comment}"><img src="picture/${gallery.image}" alt=""/></a>
                     </li>
 
                 </c:forEach>

@@ -6,12 +6,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/MainServlet.java" afterPath="$PROJECT_DIR$/src/server/MainServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tables/Teacher.java" afterPath="$PROJECT_DIR$/src/tables/Teacher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bite-the-bullet.jsp" afterPath="$PROJECT_DIR$/web/bite-the-bullet.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/contact.jsp" afterPath="$PROJECT_DIR$/web/contact.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/interesting.jsp" afterPath="$PROJECT_DIR$/web/interesting.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lazy_person.jsp" afterPath="$PROJECT_DIR$/web/lazy_person.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main.jsp" afterPath="$PROJECT_DIR$/web/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/piece-of-cake.jsp" afterPath="$PROJECT_DIR$/web/piece-of-cake.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/reviews.jsp" afterPath="$PROJECT_DIR$/web/reviews.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/slang.jsp" afterPath="$PROJECT_DIR$/web/slang.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/beans/InterestingService.java" afterPath="$PROJECT_DIR$/src/beans/TrainingService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tables/Interesting.java" afterPath="$PROJECT_DIR$/src/tables/Training.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/study.jsp" afterPath="$PROJECT_DIR$/web/study.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher.jsp" afterPath="$PROJECT_DIR$/web/teacher.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/teacher_resume.jsp" afterPath="$PROJECT_DIR$/web/teacher_resume.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/beans/CommandService.java" afterPath="$PROJECT_DIR$/src/beans/GalleryService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tables/Command.java" afterPath="$PROJECT_DIR$/src/tables/Gallery.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/command.jsp" afterPath="$PROJECT_DIR$/web/gallery.jsp" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,30 +41,6 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - webenglish@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="training" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - webenglish@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -63,86 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrainingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beans/TrainingService.java">
+      <file leaf-file-name="gallery.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/gallery.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/MainServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-              <folding>
-                <marker date="1462986434631" expanded="true" signature="1030:1101" placeholder="..." />
-                <marker date="1462986434631" expanded="true" signature="1036:1094" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interesting.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/interesting.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Training.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tables/Training.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webenglish.training" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.training">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tables/Teacher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+            <state relative-caret-position="25">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -173,9 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/common.rnc" />
-        <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/web/book_style.css" />
         <option value="$PROJECT_DIR$/web/index.js" />
         <option value="$PROJECT_DIR$/web/index.css" />
         <option value="$PROJECT_DIR$/src/beans/BookService.java" />
@@ -202,15 +109,10 @@
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/beans/InterestingService.java" />
         <option value="$PROJECT_DIR$/web/show_all_clients.jsp" />
-        <option value="$PROJECT_DIR$/web/piece-of-cake.jsp" />
-        <option value="$PROJECT_DIR$/web/reviews.jsp" />
-        <option value="$PROJECT_DIR$/web/study.jsp" />
         <option value="$PROJECT_DIR$/web/styles/base.css" />
         <option value="$PROJECT_DIR$/src/beans/CommandService.java" />
         <option value="$PROJECT_DIR$/web/command.jsp" />
-        <option value="$PROJECT_DIR$/web/teacher.jsp" />
         <option value="$PROJECT_DIR$/web/styles/style.css" />
-        <option value="$PROJECT_DIR$/web/teacher_resume.jsp" />
         <option value="$PROJECT_DIR$/src/tables/Teacher.java" />
         <option value="$PROJECT_DIR$/src/beans/TeacherService.java" />
         <option value="$PROJECT_DIR$/src/tables/Client.java" />
@@ -218,12 +120,20 @@
         <option value="$PROJECT_DIR$/src/tables/Interesting.java" />
         <option value="$PROJECT_DIR$/src/tables/Gruppa.java" />
         <option value="$PROJECT_DIR$/src/beans/TrainingService.java" />
-        <option value="$PROJECT_DIR$/web/slang.jsp" />
-        <option value="$PROJECT_DIR$/web/lazy_person.jsp" />
-        <option value="$PROJECT_DIR$/web/interesting.jsp" />
         <option value="$PROJECT_DIR$/src/tables/Training.java" />
+        <option value="$PROJECT_DIR$/src/tables/Gallery.java" />
+        <option value="$PROJECT_DIR$/src/beans/GalleryService.java" />
         <option value="$PROJECT_DIR$/src/server/MainServlet.java" />
+        <option value="$PROJECT_DIR$/web/teacher_resume.jsp" />
+        <option value="$PROJECT_DIR$/web/teacher.jsp" />
+        <option value="$PROJECT_DIR$/web/interesting.jsp" />
+        <option value="$PROJECT_DIR$/web/lazy_person.jsp" />
         <option value="$PROJECT_DIR$/web/main.jsp" />
+        <option value="$PROJECT_DIR$/web/piece-of-cake.jsp" />
+        <option value="$PROJECT_DIR$/web/reviews.jsp" />
+        <option value="$PROJECT_DIR$/web/slang.jsp" />
+        <option value="$PROJECT_DIR$/web/study.jsp" />
+        <option value="$PROJECT_DIR$/web/gallery.jsp" />
       </list>
     </option>
   </component>
@@ -877,7 +787,7 @@
       <workItem from="1462290743978" duration="608000" />
       <workItem from="1462305715870" duration="15000" />
       <workItem from="1462888653189" duration="4053000" />
-      <workItem from="1462899651312" duration="6778000" />
+      <workItem from="1462899651312" duration="9014000" />
     </task>
     <task id="LOCAL-00001" summary="11.03">
       <created>1457729532827</created>
@@ -1040,11 +950,18 @@
       <option name="project" value="LOCAL" />
       <updated>1462901194749</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="11.05">
+      <created>1462988601896</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1462988601896</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187847000" />
+    <option name="totallyTimeSpent" value="190083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1028" height="735" extended-state="0" />
@@ -1066,7 +983,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21177685" sideWeight="0.49140048" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15885022" sideWeight="0.5085995" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22623967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22623967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1022,8 @@
     <MESSAGE value="25,04" />
     <MESSAGE value="27.04" />
     <MESSAGE value="10.05" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.05" />
+    <MESSAGE value="11.05" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1118,71 +1036,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tables/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resume.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/show_all_clients.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/bite-the-bullet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="64" column="235" selection-start-line="60" selection-start-column="16" selection-end-line="64" selection-end-column="235" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/none.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/piece-of-cake.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/reviews.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/study.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/clearfix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/jquery.fancybox-1.3.1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1249,13 +1102,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.interesting" />
-    <entry file="file://$PROJECT_DIR$/src/beans/CommandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.command" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/tables.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -1347,14 +1193,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/command.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/7f30b783/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.teacher" />
     <entry file="dbDummy://dbtable:/7f30b783/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.command" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8c132df8-66de-41ac-9d28-21c26bbb3161/console.sql">
@@ -1369,22 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="616" column="24" selection-start-line="616" selection-start-column="24" selection-end-line="616" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher_resume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tables/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1422,27 +1244,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/teacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.training">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/slang.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/lazy_person.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding />
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1457,22 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tables/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/interesting.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tables/Training.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1483,7 +1278,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.training">
+    <entry file="file://$PROJECT_DIR$/src/tables/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tables/Gallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/GalleryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.teacher">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1496,24 +1328,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MainServlet.java">
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.teacher">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.teacher">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.gallery">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c564f500/8c132df8-66de-41ac-9d28-21c26bbb3161/webenglish.teacher">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bite-the-bullet.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="341">
+          <caret line="64" column="235" selection-start-line="60" selection-start-column="16" selection-end-line="64" selection-end-column="235" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher_resume.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/teacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/interesting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/lazy_person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+        <state relative-caret-position="42">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding>
-            <marker date="1462986434631" expanded="true" signature="1030:1101" placeholder="..." />
-            <marker date="1462986434631" expanded="true" signature="1036:1094" placeholder="{...}" />
+            <marker date="1462990161268" expanded="true" signature="1030:1101" placeholder="..." />
+            <marker date="1462990161268" expanded="true" signature="1036:1094" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/none.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/piece-of-cake.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/reviews.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/slang.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/study.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/gallery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 package server;
 
 import beans.*;
-import tables.Command;
+import tables.Gallery;
 import tables.Training;
 import tables.Teacher;
 
@@ -28,7 +28,7 @@ public class MainServlet extends HttpServlet {
     @EJB
     PageService ps;
     @EJB
-    CommandService cos;
+    GalleryService gs;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -42,15 +42,15 @@ public class MainServlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
-        if (servletPath.contains("command.html")) {
-            List<Command> commands = cos.findAll();
-            List<String> names = commands.stream().map(c -> c.getTeacher().getName()).distinct().collect(toList());
-            request.setAttribute("commands", commands);
+        if (servletPath.contains("gallery.html")) {
+            List<Gallery> galleries = gs.findAll();
+            List<String> names = galleries.stream().map(c -> c.getTeacher().getName()).distinct().collect(toList());
+            request.setAttribute("galleries", galleries);
             request.setAttribute("names", names);
-            request.getRequestDispatcher("/command.jsp").forward(request,response);
+            request.getRequestDispatcher("/gallery.jsp").forward(request,response);
         } else if (servletPath.contains("index.html")) {
-            List<Command> commands = cos.findAll();
-            request.setAttribute("commands", commands);
+            List<Gallery> galleries = gs.findAll();
+            request.setAttribute("galleries", galleries);
 
             List<Training> trainings = trs.findAll();
             request.setAttribute("trainings", trainings);

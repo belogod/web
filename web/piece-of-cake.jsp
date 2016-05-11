@@ -29,7 +29,7 @@
                         <li><a href="slang.html">Сленг</a></li>
                         <li><a href="lazy_person.html">Для лентяев</a></li>
                     </ul>
-                <li><a href="command.html">Наша команда</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="reviews.html">Отзывы</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>

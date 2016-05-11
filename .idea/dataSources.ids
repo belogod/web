@@ -9,7 +9,7 @@
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
       <schema id="1" name="webenglish"/>
       <table id="2" parent="1" name="client"/>
-      <table id="3" parent="1" name="command"/>
+      <table id="3" parent="1" name="gallery"/>
       <table id="4" parent="1" name="gruppa"/>
       <table id="5" parent="1" name="gruppa_client"/>
       <table id="6" parent="1" name="page"/>
@@ -43,18 +43,18 @@
         <sequence-identity>1</sequence-identity>
       </column>
       <column id="17" parent="3" name="COMMENT">
-        <data-type>varchar(100)</data-type>
+        <data-type>varchar(50)</data-type>
       </column>
       <column id="18" parent="3" name="IMAGE">
-        <data-type>varchar(100)</data-type>
+        <data-type>varchar(50)</data-type>
       </column>
       <column id="19" parent="3" name="IMG">
-        <data-type>varchar(100)</data-type>
+        <data-type>varchar(50)</data-type>
       </column>
       <column id="20" parent="3" name="TEACHER_ID">
         <data-type>int(11)</data-type>
       </column>
-      <index id="21" parent="3" name="FK_COMMAND_TEACHER_ID">
+      <index id="21" parent="3" name="FK_GALLERY_TEACHER_ID">
         <columns>TEACHER_ID</columns>
         <desc-columns></desc-columns>
       </index>
@@ -62,7 +62,7 @@
         <columns>ID</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="23" parent="3" name="FK_COMMAND_TEACHER_ID">
+      <foreign-key id="23" parent="3" name="FK_GALLERY_TEACHER_ID">
         <columns>TEACHER_ID</columns>
         <ref-key>~.teacher.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>

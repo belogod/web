@@ -39,7 +39,7 @@
                         <li><a href="slang.html">Сленг</a></li>
                         <li><a href="lazy_person.html">Для лентяев</a></li>
                     </ul>
-                <li><a href="command.html">Наша команда</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="reviews.html">Отзывы</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
@@ -55,8 +55,8 @@
         <div id="image-slider">
             <ul id="mycarousel" class="jcarousel-skin-tango">
 
-                <c:forEach var="command" items="${commands}">
-                    <li><a href="command.html"><img width="280" height="190" src="picture/${command.image}" alt=""/></a>
+                <c:forEach var="gallery" items="${galleries}">
+                    <li><a href="gallery.html"><img width="280" height="190" src="picture/${gallery.image}" alt=""/></a>
                     </li>
                 </c:forEach>
 

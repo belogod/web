@@ -36,10 +36,10 @@ public class Teacher {
     private Collection<Review> reviews;
 
     @OneToMany (mappedBy = "teacher")
-    private Collection<Command> commands;
+    private Collection<Gallery> galleries;
 
 
-    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Command> commands) {
+    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Gallery> galleries) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
@@ -48,7 +48,7 @@ public class Teacher {
         this.age = age;
         this.grupps = grupps;
         this.reviews = reviews;
-        this.commands = commands;
+        this.galleries = galleries;
     }
 
     public Teacher(String lastName, String name, String phone, String email, String pictureFileName, String age) {
@@ -125,7 +125,7 @@ public class Teacher {
                 ", pictureFileName='" + pictureFileName + '\'' +
                 ", grupps=" + grupps +
                 ", reviews=" + reviews +
-                ", commands=" + commands +
+                ", galleries=" + galleries +
                 ", age=" + age +
                 '}';
     }
@@ -147,12 +147,12 @@ public class Teacher {
         this.reviews = reviews;
     }
 
-    public Collection<Command> getCommands() {
-        return commands;
+    public Collection<Gallery> getGalleries() {
+        return galleries;
     }
 
-    public void setCommands(Collection<Command> commands) {
-        this.commands = commands;
+    public void setGalleries(Collection<Gallery> galleries) {
+        this.galleries = galleries;
     }
 
     @Override
