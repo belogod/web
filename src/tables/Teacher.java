@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
-/**
- * Created by Yevhen on 29.02.2016.
- */
+
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Teacher.findAll", query = "select t from Teacher t")
@@ -16,7 +14,7 @@ public class Teacher {
     private Integer id;
     @Column(length = 20)
     private String lastName;
-    @Column(length = 15)
+    @Column(length = 20)
     private String name;
     @Column(length = 20)
     private String phone;
@@ -30,7 +28,8 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher")
     private Collection<Gruppa> grupps;
 
-
+    @OneToMany(mappedBy = "teacher")
+    private Collection<Experience> experiences;
 
     @OneToMany(mappedBy = "teacher")
     private Collection<Review> reviews;
@@ -39,7 +38,7 @@ public class Teacher {
     private Collection<Gallery> galleries;
 
 
-    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Gallery> galleries) {
+    public Teacher(String lastName, String name, String phone, String email, String pictureFileName, int age, Collection<Gruppa> grupps, Collection<Review> reviews, Collection<Experience> experiences, Collection<Gallery> galleries) {
         this.lastName = lastName;
         this.name = name;
         this.phone = phone;
@@ -49,6 +48,7 @@ public class Teacher {
         this.grupps = grupps;
         this.reviews = reviews;
         this.galleries = galleries;
+        this.experiences = experiences;
     }
 
     public Teacher(String lastName, String name, String phone, String email, String pictureFileName, String age) {
@@ -114,22 +114,13 @@ public class Teacher {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Teacher{" +
-                "id=" + id +
-                ", lastName='" + lastName + '\'' +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", pictureFileName='" + pictureFileName + '\'' +
-                ", grupps=" + grupps +
-                ", reviews=" + reviews +
-                ", galleries=" + galleries +
-                ", age=" + age +
-                '}';
+    public Collection<Experience> getExperiences() {
+        return experiences;
     }
 
+    public void setExperiences(Collection<Experience> experiences) {
+        this.experiences = experiences;
+    }
 
     public Collection<Gruppa> getGrupps() {
         return grupps;
@@ -155,6 +146,27 @@ public class Teacher {
         this.galleries = galleries;
     }
 
+
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", pictureFileName='" + pictureFileName + '\'' +
+                ", grupps=" + grupps +
+                ", reviews=" + reviews +
+                ", galleries=" + galleries +
+                ", age=" + age +
+                ", experiences" + experiences +
+                '}';
+    }
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -167,4 +179,8 @@ public class Teacher {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
+
+
 }
