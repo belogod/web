@@ -65,14 +65,14 @@
         <!--end image-slider-->
     </div>
     <!--end featured-section-->
-    <c:forEach items="${interestings}" var="interesting">
+    <c:forEach items="${trainings}" var="training">
     <div id="frontpage-main">
         <div id="frontpage-content">
 
-            <br><h3>${interesting.title}</h3>
+            <br><h3>${training.title}</h3>
 
             <br><ul class="blue-bullets">
-                <li>${interesting.text}</li>
+                <li>${training.text}</li>
 
             </ul>
 

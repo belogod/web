@@ -3,15 +3,13 @@ package tables;
 import javax.persistence.*;
 import java.util.Objects;
 
-/**
- * Created by Eugeny on 11.04.2016.
- */
+
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Interesting.findAll", query = "select i from Interesting i"),
-        @NamedQuery(name = "Interesting.findByType", query = "select i from Interesting i where i.type=:type")
+        @NamedQuery(name = "Training.findAll", query = "select i from Training i"),
+        @NamedQuery(name = "Training.findByType", query = "select i from Training i where i.type=:type")
 })
-public class Interesting {
+public class Training {
     public final static Integer INTERESTING = 1;
     public final static Integer SLANG = 2;
     public final static Integer LAZY = 3;
@@ -29,7 +27,7 @@ public class Interesting {
     private String url;
     private Integer type;
 
-    public Interesting(String title, String picture, String text, String url, Integer type) {
+    public Training(String title, String picture, String text, String url, Integer type) {
         this.title = title;
         this.picture = picture;
         this.text = text;
@@ -37,7 +35,7 @@ public class Interesting {
         this.type = type;
     }
 
-    public Interesting() {
+    public Training() {
     }
 
     public int getId() {
@@ -91,8 +89,8 @@ public class Interesting {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Interesting)) return false;
-        Interesting that = (Interesting) o;
+        if (!(o instanceof Training)) return false;
+        Training that = (Training) o;
         return id == that.id;
     }
 

@@ -41,10 +41,10 @@
     <div id="main">
         <div id="content">
             <%--  Извлекаем из БД  Таблица: interesting --%>
-            <c:forEach items="${interestings}" var="interesting">
-                <h3 class="post-title"><c:out value="<a href=\"${interesting.url}\">${interesting.title}</a>" escapeXml="false" /></h3>
-                <c:out value="<img src=\"picture/${interesting.picture}\"" escapeXml="false" />
-                <p><c:out value="${interesting.text}" escapeXml="false" /></p>
+            <c:forEach items="${trainings}" var="training">
+                <h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3>
+                <c:out value="<img src=\"picture/${training.picture}\"" escapeXml="false" />
+                <p><c:out value="${training.text}" escapeXml="false" /></p>
                 <div class="post-line"></div>
             </c:forEach>
 

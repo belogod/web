@@ -2,7 +2,7 @@ package server;
 
 import beans.*;
 import tables.Command;
-import tables.Interesting;
+import tables.Training;
 import tables.Teacher;
 
 import javax.ejb.EJB;
@@ -24,7 +24,7 @@ public class MainServlet extends HttpServlet {
     @EJB
     TeacherService ts;
     @EJB
-    InterestingService is;
+    TrainingService trs;
     @EJB
     PageService ps;
     @EJB
@@ -52,8 +52,8 @@ public class MainServlet extends HttpServlet {
             List<Command> commands = cos.findAll();
             request.setAttribute("commands", commands);
 
-            List<Interesting> interestings = is.findAll();
-            request.setAttribute("interestings", interestings);
+            List<Training> trainings = trs.findAll();
+            request.setAttribute("trainings", trainings);
             request.getRequestDispatcher("/main.jsp").forward(request,response);
         }
         else if (servletPath.contains("contact.html")){
@@ -84,15 +84,15 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/reviews.jsp").forward(request,response);
         }
         else if (servletPath.contains("interesting.html")){
-            request.setAttribute("interestings", is.findByType(Interesting.INTERESTING));
+            request.setAttribute("trainings", trs.findByType(Training.INTERESTING));
             request.getRequestDispatcher("/interesting.jsp").forward(request,response);
         }
         else if (servletPath.contains("slang.html")){
-            request.setAttribute("interestings", is.findByType(Interesting.SLANG));
+            request.setAttribute("trainings", trs.findByType(Training.SLANG));
             request.getRequestDispatcher("/slang.jsp").forward(request,response);
         }
         else if (servletPath.contains("lazy_person.html")){
-            request.setAttribute("interestings", is.findByType(Interesting.LAZY));
+            request.setAttribute("trainings", trs.findByType(Training.LAZY));
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
         else if (servletPath.contains("piece-of-cake.html")){
