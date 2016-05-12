@@ -66,8 +66,7 @@
 
                 <c:forEach var="gallery" items="${galleries}">
 
-                    <li id="id1" class="${gallery.teacher.name}"><a href="picture/${gallery.img}" class="gallery"
-                                                                    rel="1" title="${gallery.comment}"><img src="picture/${gallery.image}" alt=""/></a>
+                    <li id="id1" class="${gallery.teacher.name}"><a href="picture/${gallery.img}" class="gallery" rel="1" title="${gallery.comment}"><img src="picture/${gallery.image}" alt=""/></a>
                     </li>
 
                 </c:forEach>

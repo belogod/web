@@ -13,6 +13,14 @@ public class ExperienceService {
     EntityManager em;
 
 
+//    public Teacher find(Integer id) {
+//        return em.find(Teacher.class, id);
+//    }
+public Experience find (Integer teacher_id){
+    return em.find(Experience.class, teacher_id);
+}
+
+
     public List<Experience> findAll() {
         return em.createNamedQuery("Experience.findAll").getResultList();
     }

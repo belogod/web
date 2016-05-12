@@ -1,6 +1,7 @@
 package server;
 
 import beans.*;
+import tables.Experience;
 import tables.Gallery;
 import tables.Training;
 import tables.Teacher;
@@ -29,6 +30,8 @@ public class MainServlet extends HttpServlet {
     PageService ps;
     @EJB
     GalleryService gs;
+    @EJB
+    ExperienceService es;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -60,13 +63,22 @@ public class MainServlet extends HttpServlet {
             request.getRequestDispatcher("/contact.jsp").forward(request,response);
         }
         else if (servletPath.contains("teacher_resume.html")){
+
+
             String tid = request.getParameter("tid");
             try {
                 Integer aid = Integer.valueOf(tid);
+
                 Teacher teacher = ts.find(aid);
                 request.setAttribute("teacher", teacher);
+
+                Integer eid = Integer.valueOf(tid);
+                Experience experience = es.find(eid);
+                request.setAttribute("experience", experience);
+
                 request.getRequestDispatcher("/teacher_resume.jsp").forward(request, response);
-            } catch (NumberFormatException ex) {
+            }
+            catch (NumberFormatException ex) {
                 response.sendRedirect("teacher.html");
             }
 

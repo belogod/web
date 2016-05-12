@@ -40,24 +40,6 @@
 
     <div class="page-headline">Преподаватели</div>
     <div id="main">
-        <%--<table>--%>
-
-            <%--<tbody>--%>
-            <%--<c:forEach var="teacher" items="${teachers}">--%>
-                <%--<tr>--%>
-                    <%--<td>--%>
-                        <%--<a href="teacher_resume.html?tid=${teacher.id}">--%>
-                        <%--<img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>--%>
-                        <%--</a>--%>
-                    <%--</td>--%>
-                    <%--<td class="teacher-lastname">${teacher.lastName}<br/>${teacher.name}<br/>--%>
-                    <%--<img src="images/phone.png"> ${teacher.phone}--%>
-                    <%--<br>${teacher.email}</td>--%>
-                <%--</tr>--%>
-        <%--&lt;%&ndash;<div class="portfolio-item"> <a href="teacher_resume.html"><img width="280" height="190" src="images/280x190.gif" alt="" /></a> </div>&ndash;%&gt;--%>
-            <%--</c:forEach>--%>
-            <%--</tbody>--%>
-        <%--</table>--%>
 
 
 
@@ -68,9 +50,9 @@
                 <tr>
                     <td><img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
                     <p><br><a href="teacher_resume.html?tid=${teacher.id}">Просмотреть резюме</a></td>
-                    <td id="about">Дата рождения : ${teacher.age}
-                    <br>${teacher.phone}
-                    <br>${teacher.email}</td>
+                    <td id="about"><p>Age : ${teacher.age}</p>
+                        <br><p><img src="images/phone.png"> ${teacher.phone}</p>
+                    <br><p><img src="images/E-Mail.png"> ${teacher.email}</p></td>
                 </tr>
 
             </table>
