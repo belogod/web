@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -61,11 +62,14 @@
 
             <caption>Дата Род занятий</caption>
 
-
+            <c:forEach items="${teacher.experiences}" var="experience">
             <tr>
-                <td>${experience.date}</td>
+                <td>
+                    <fmt:formatDate value="${experience.date}" pattern="dd MMMM yyyy"/>
+                </td>
                 <td>${experience.text}</td>
             </tr>
+            </c:forEach>
 
         </table>
 

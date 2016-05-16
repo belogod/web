@@ -45,6 +45,12 @@ public class MainServlet extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String servletPath = request.getServletPath();
+        int p2 = servletPath.indexOf(".html");
+        if (p2>0) {
+            int p1 = servletPath.lastIndexOf("/", p2) + 1;
+            String sp = servletPath.substring(p1, p2);
+            request.setAttribute("sp", sp);
+        }
         if (servletPath.contains("gallery.html")) {
             List<Gallery> galleries = gs.findAll();
             List<String> names = galleries.stream().map(c -> c.getTeacher().getName()).distinct().collect(toList());
@@ -72,9 +78,9 @@ public class MainServlet extends HttpServlet {
                 Teacher teacher = ts.find(aid);
                 request.setAttribute("teacher", teacher);
 
-                Integer eid = Integer.valueOf(tid);
-                Experience experience = es.find(eid);
-                request.setAttribute("experience", experience);
+//                Integer eid = Integer.valueOf(tid);
+//                Experience experience = es.find(eid);
+//                request.setAttribute("experience", experience);
 
                 request.getRequestDispatcher("/teacher_resume.jsp").forward(request, response);
             }

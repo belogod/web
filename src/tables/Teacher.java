@@ -29,6 +29,7 @@ public class Teacher {
     private Collection<Gruppa> grupps;
 
     @OneToMany(mappedBy = "teacher")
+    @OrderBy("date ASC")
     private Collection<Experience> experiences;
 
     @OneToMany(mappedBy = "teacher")
