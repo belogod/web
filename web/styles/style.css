@@ -567,14 +567,14 @@ a:hover{
 
 /*Teacher*/
 
-.table_price {
+.table_teacher {
 	border-collapse: collapse;
 	border-left: 3px solid #F79361;
 	border-right: 3px solid #F79361;
 	border-bottom: 3px solid #F79361;
 	font-family: "Lucida Grande", sans-serif;
 }
-.table_price caption {
+.table_teacher caption {
 	background: #F79361;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -587,27 +587,27 @@ a:hover{
 	text-align: center;
 	margin: 0;
 }
-.table_price td, .table_price th {
+.table_teacher td, .table_teacher th {
 	padding: 10px;
 }
-.table_price th {
+.table_teacher th {
 	text-align: left;
 	font-size: 18px;
 }
-.table_price tr:nth-child(2n) {
+.table_teacher tr:nth-child(2n) {
 	background: #E5E5E5;
 }
-.table_price td:last-of-type {
+.table_teacher td:last-of-type {
 	text-align: center;
 }
-.table_price a {
+.table_teacher a {
 	display: inline-block;
 	padding: 5px 10px;
 	background: #F79361;
 	box-shadow: 2px 2px 0 0 #a22800;
 	position: relative;
 }
-.table_price a:hover {
+.table_teacher a:hover {
 	box-shadow: none;
 	top: 2px;
 	left: 2px;
@@ -615,4 +615,42 @@ a:hover{
 
 #about {
 	vertical-align: top;
+}
+
+
+
+/*Таблица учителей для данных*/
+.table_teacher2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	text-align: left;
+	border-collapse: collapse;
+	border-radius: 20px;
+	box-shadow: 0 0 0 10px #F2906B;
+	color: #452F21;
+}
+.table_teacher2 th {
+	font-size: 20px;
+
+	padding: 10px 8px;
+	background: white;
+}
+.table_teacher2 th:first-child {
+	border-top-left-radius: 20px;
+}
+.table_teacher2 th:last-child {
+	border-top-right-radius: 20px;
+}
+.table_teacher2 td {
+	font-size: 14px;
+
+	border-top: 10px solid #F2906B;
+	padding: 8px;
+	background: white;
+}
+.table_teacher2 td:first-child {
+	border-bottom-left-radius: 20px;
+}
+.table_teacher2 td:last-child {
+	border-bottom-right-radius: 20px;
 }

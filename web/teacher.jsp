@@ -25,7 +25,7 @@
 
 
             <c:forEach var="teacher" items="${teachers}">
-            <p></p><table class="table_price">
+            <p></p><table class="table_teacher">
 
     <caption>${teacher.lastName} ${teacher.name}<br></caption>
                 <tr>
