@@ -24,26 +24,8 @@
 </head>
 <body class="page">
 <div id="wrap">
-    <div id="header">
-        <div id="nav">
-            <ul class="menu">
-                <li class="current_page_item"><a href="index.html">Главная</a></li>
-                <li><a href="teacher.html">Преподаватели</a></li>
-                <li><a href="study.html">Расписание</a></li>
-                <li><a>Обучение</a>
-                    <ul class="sub-menu">
-                        <li><a href="interesting.html">Это интересно</a></li>
-                        <li><a href="slang.html">Сленг</a></li>
-                        <li><a href="lazy_person.html">Для лентяев</a></li>
-                    </ul>
-                <li><a href="gallery.html">Наша команда</a></li>
-                <li><a href="reviews.html">Отзывы</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </div>
-        <!--end nav-->
-    </div>
-    <!--end header-->
+    <jsp:include page="WEB-INF/header.jsp"/>
+
     <div class="page-headline">Галерея</div>
 
 
