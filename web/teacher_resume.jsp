@@ -25,21 +25,21 @@
     <div id="main">
 
 
-            <%--<table class="table_teacher">--%>
+            <table class="table_teacher">
 
-            <%--<caption>${teacher.lastName} ${teacher.name}<br></caption>--%>
-            <%--<tr>--%>
-                <%--<td><img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/></td>--%>
-                <%--<td id="about">Age : ${teacher.age}--%>
-                    <%--<br><img src="images/phone.png"> ${teacher.phone}--%>
-                    <%--<br><img src="images/E-Mail.png"> ${teacher.email}</td>--%>
-            <%--</tr>--%>
-
-        <%--</table>--%>
-
-
-        <p><table class="table_teacher2">
+            <caption>${teacher.lastName} ${teacher.name}<br></caption>
             <tr>
+                <td><img width="240" height="240" src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/></td>
+                <td id="about">Age : ${teacher.age}
+                    <br><img src="images/phone.png"> ${teacher.phone}
+                    <br><img src="images/E-Mail.png"> ${teacher.email}</td>
+            </tr>
+
+        </table>
+
+
+        <table class="table_teacher2">
+            <p><tr>
                 <th>Дата</th>
                 <th>Род занятий</th>
 
@@ -52,21 +52,6 @@
             </tr>
             </c:forEach>
         </table>
-
-        <%--<table class="table_price">--%>
-
-            <%--<p>Дата Род занятий--%>
-            <%--<td><caption>Дата Род занятий</caption></td>--%>
-            <%--</tr>--%>
-            <%--<c:forEach items="${teacher.experiences}" var="experience">--%>
-            <%--<tr>--%>
-                <%--<td><fmt:formatDate value="${experience.date}" pattern="dd MMMM yyyy"/></td>--%>
-                <%--<td>${experience.text}</td>--%>
-            <%--</tr>--%>
-            <%--</c:forEach>--%>
-
-        <%--</table>--%>
-
 
 
     </div>

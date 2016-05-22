@@ -29,7 +29,7 @@
 
     <caption>${teacher.lastName} ${teacher.name}<br></caption>
                 <tr>
-                    <td><img src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
+                    <td><img width="240" height="240" src="img/${teacher.pictureFileName}" alt="${teacher.pictureFileName}"/>
                     <p><br><a href="teacher_resume.html?tid=${teacher.id}">Просмотреть резюме</a></td>
                     <td id="about"><p>Age : ${teacher.age}</p>
                         <br><p><img src="images/phone.png"> ${teacher.phone}</p>
