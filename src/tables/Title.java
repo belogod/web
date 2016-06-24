@@ -8,24 +8,24 @@ import java.util.Collection;
  */
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "NameCourse.findAll", query = "select n from NameCourse n")
+        @NamedQuery(name = "NameCourse.findAll", query = "select n from Title n")
 })
-public class NameCourse {
+public class Title {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
 
-  @OneToMany (mappedBy = "nameCourse")
+  @OneToMany (mappedBy = "title")
   private Collection <Сourse> courses;
 
 
-    public NameCourse(String title, Collection<Сourse> courses) {
+    public Title(String title, Collection<Сourse> courses) {
         this.title = title;
         this.courses = courses;
     }
 
-    public NameCourse() {
+    public Title() {
     }
 
     public Integer getId() {
@@ -57,7 +57,7 @@ public class NameCourse {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        NameCourse that = (NameCourse) o;
+        Title that = (Title) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (title != null ? !title.equals(that.title) : that.title != null) return false;
@@ -75,7 +75,7 @@ public class NameCourse {
 
     @Override
     public String toString() {
-        return "NameCourse{" +
+        return "Title{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", courses=" + courses +

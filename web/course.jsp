@@ -27,7 +27,7 @@
 
         <table class="table_teacher">
 
-            <caption>${nameCourse.title} <br></caption>
+            <caption>${title.title} <br></caption>
 
 
         </table>
@@ -35,11 +35,26 @@
 
         <table class="table_teacher2">
             <p><tr>
+                <th>День недели</th>
+                <th>Время</th>
+
+            </tr>
+                <c:forEach items="${title.courses}" var="course">
+                <tr>
+                    <td>${course.week}</td>
+                    <td>${course.time}</td>
+
+                </tr>
+                </c:forEach>
+        </table>
+
+        <table class="table_teacher2">
+            <p><tr>
                 <th>Цена</th>
                 <th>Текст</th>
 
             </tr>
-                <c:forEach items="${nameCourse.course}" var="course">
+                <c:forEach items="${title.courses}" var="course">
                 <tr>
                     <td>${course.price}</td>
                     <td>${course.text}</td>

@@ -24,12 +24,12 @@
 
 
 
-        <c:forEach var="nameCourse" items="${nameCourses}">
+        <c:forEach var="title" items="${titles}">
             <p></p><table class="table_teacher">
 
-            <caption>${nameCourse.title} <br></caption>
+            <caption>${title.title} <br></caption>
             <tr>
-                <td><p><br><a href="course.html?tid=${nameCourse.id}">Просмотреть резюме</a></td>
+                <td><p><br><a href="course.html?ttid=${title.id}">Просмотреть резюме</a></td>
 
             </tr>
 

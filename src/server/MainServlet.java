@@ -30,7 +30,7 @@ public class MainServlet extends HttpServlet {
     @EJB
     ExperienceService es;
     @EJB
-    NameCourseService ncs;
+    TitleService tis;
     @EJB
     CourseService cos;
 
@@ -90,26 +90,38 @@ public class MainServlet extends HttpServlet {
             request.setAttribute("teachers", teachers);
             request.getRequestDispatcher("/teacher.jsp").forward(request,response);
         }
+
+
+
+
+
         else if (servletPath.contains("course.html")){
 
 
-            String cid = request.getParameter("cid");
+            String ttid = request.getParameter("ttid");
             try {
-                Integer aid = Integer.valueOf(cid);
-                NameCourse nameCourse = ncs.find(aid);
-                request.setAttribute("nameCourse", nameCourse);
+                Integer aid = Integer.valueOf(ttid);
+                Title title = tis.find(aid);
+                request.setAttribute("title", title);
                 request.getRequestDispatcher("/course.jsp").forward(request, response);
             }
             catch (NumberFormatException ex) {
-                response.sendRedirect("nameCourse.html");
+                response.sendRedirect("title.html");
             }
+
         }
 
-        else if (servletPath.contains("nameCourse.html")){
-            List<NameCourse> nameCourses = ncs.findAll();
-            request.setAttribute("nameCourses", nameCourses);
-            request.getRequestDispatcher("/nameCourse.jsp").forward(request,response);
+        else if (servletPath.contains("title.html")){
+            List<Title> titles = tis.findAll();
+            request.setAttribute("titles", titles);
+            request.getRequestDispatcher("/title.jsp").forward(request,response);
         }
+
+
+
+
+
+
 
 
 

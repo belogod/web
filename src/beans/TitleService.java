@@ -1,7 +1,7 @@
 package beans;
 
 
-import tables.NameCourse;
+import tables.Title;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -9,15 +9,15 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Stateless
-public class NameCourseService {
+public class TitleService {
     @PersistenceContext
     EntityManager em;
 
-    public NameCourse find (Integer id){
-        return em.find(NameCourse.class, id);
+    public Title find (Integer id){
+        return em.find(Title.class, id);
     }
 
-    public List <NameCourse> findAll() {
+    public List <Title> findAll() {
         return em.createNamedQuery("NameCourse.findAll").getResultList();
     }
 }

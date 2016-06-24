@@ -1,7 +1,6 @@
 package tables;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
 @NamedQueries({
@@ -110,14 +109,14 @@ public class Сourse {
     }
 
     @ManyToOne(optional = false)
-    private NameCourse nameCourse;
+    private Title title;
 
-    public NameCourse getNameCourse() {
-        return nameCourse;
+    public Title getTitle() {
+        return title;
     }
 
-    public void setNameCourse(NameCourse nameCourse) {
-        this.nameCourse = nameCourse;
+    public void setTitle(Title title) {
+        this.title = title;
     }
 }
 
