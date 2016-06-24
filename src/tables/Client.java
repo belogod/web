@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
-/**
- * Created by Yevhen on 29.02.2016.
- */
+
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Client.findAll", query = "select c from Client c")

@@ -28,7 +28,22 @@
             <h3>Контакты</h3>
             <h4>Телефон: <span>+38 (063) 627-66-56</span></h4>
             <h4>Email: <span>belogod@gmail.com</span></h4>
+
+
+            <p><p><p>
+            <div class="module">
+                <iframe
+                        name=""
+                        src="http://maps.google.com/?ie=UTF8&amp;ll=46.967966, 31.994307&amp;spn=0.004467,0.010568&amp;z=17&amp;output=embed"
+                        width="100%"
+                        height="180"
+                        class="wrapper" >
+                    No Iframes
+                </iframe>
+            </div>
         </div>
+
+
         <!--end contact-details-->
         <div id="contact-form-container">
             <form id="contact-form" method="post" action="#">

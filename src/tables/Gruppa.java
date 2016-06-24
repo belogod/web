@@ -6,9 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Created by Yevhen on 29.02.2016.
- */
+
 @Entity
 public class Gruppa {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -3,9 +3,7 @@ package tables;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by Belogod on 15.03.2016.
- */
+
 @Entity
 public class Review {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

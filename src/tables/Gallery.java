@@ -2,9 +2,7 @@ package tables;
 
 import javax.persistence.*;
 
-/**
- * Created by Belogod on 27.04.2016.
- */
+
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Gallery.findAll", query = "select g from Gallery g")

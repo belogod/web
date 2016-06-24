@@ -3,9 +3,7 @@ package tables;
 import javax.persistence.*;
 import java.util.Objects;
 
-/**
- * Created by Eugeny on 11.04.2016.
- */
+
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Page.find", query = "select p from Page p where p.url = :url")

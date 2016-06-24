@@ -7,9 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by Eugeny on 22.03.2016.
- */
+
 @Stateless
 public class TeacherService {
     @PersistenceContext
