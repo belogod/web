@@ -1,6 +1,7 @@
 package tables;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Created by Belogod on 24.06.2016.
@@ -15,12 +16,13 @@ public class NameCourse {
     private Integer id;
     private String title;
 
-    @ManyToOne(optional = false)
-       private Сourse сourse;
+  @OneToMany (mappedBy = "nameCourse")
+  private Collection <Сourse> courses;
 
 
-    public NameCourse(String title) {
+    public NameCourse(String title, Collection<Сourse> courses) {
         this.title = title;
+        this.courses = courses;
     }
 
     public NameCourse() {
@@ -42,6 +44,14 @@ public class NameCourse {
         this.title = title;
     }
 
+    public Collection<Сourse> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Collection<Сourse> courses) {
+        this.courses = courses;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -50,7 +60,8 @@ public class NameCourse {
         NameCourse that = (NameCourse) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        return title != null ? title.equals(that.title) : that.title == null;
+        if (title != null ? !title.equals(that.title) : that.title != null) return false;
+        return courses != null ? courses.equals(that.courses) : that.courses == null;
 
     }
 
@@ -58,6 +69,7 @@ public class NameCourse {
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (courses != null ? courses.hashCode() : 0);
         return result;
     }
 
@@ -66,16 +78,7 @@ public class NameCourse {
         return "NameCourse{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", courses=" + courses +
                 '}';
-    }
-
-
-
-    public Сourse getСourse() {
-        return сourse;
-    }
-
-    public void setСourse(Сourse сourse) {
-        this.сourse = сourse;
     }
 }

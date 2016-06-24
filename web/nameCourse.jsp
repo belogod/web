@@ -1,9 +1,9 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Расписание</title>
-    <meta charset="utf-8">
+    <title>Название курсов</title>
     <link type="text/css" rel="stylesheet" href="styles/style.css" />
     <!--[if IE 6]>
     <script src="js/ie6-transparency.js"></script>
@@ -13,15 +13,33 @@
     <![endif]-->
     <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
     <!--[if IE 8]><link rel="stylesheet" href="styles/ie8.css" /><![endif]-->
+
 </head>
 <body class="page">
 <div id="wrap">
     <jsp:include page="WEB-INF/header.jsp"/>
 
-    <div class="page-headline">Расписание занятий</div>
+    <div class="page-headline">Курсы</div>
+    <div id="main">
+
+
+
+        <c:forEach var="nameCourse" items="${nameCourses}">
+            <p></p><table class="table_teacher">
+
+            <caption>${nameCourse.title} <br></caption>
+            <tr>
+                <td><p><br><a href="course.html?tid=${nameCourse.id}">Просмотреть резюме</a></td>
+
+            </tr>
+
+        </table>
+        </c:forEach>
 
     </div>
-
+    <!--end wrap-->
+</div>
 </body>
-
+<div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>
+<!--end cache-images-->
 </html>

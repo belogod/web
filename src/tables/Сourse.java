@@ -17,8 +17,7 @@ public class Сourse {
     private String price;
     private String text;
 
-    @OneToMany (mappedBy = "сourse")
-    private Collection<NameCourse> nameCourse;
+
 
     public Сourse(String week, String time, String price, String text) {
 
@@ -26,6 +25,7 @@ public class Сourse {
         this.time = time;
         this.price = price;
         this.text = text;
+
     }
 
     public Сourse() {
@@ -107,6 +107,17 @@ public class Сourse {
                 ", price='" + price + '\'' +
                 ", text='" + text + '\'' +
                 '}';
+    }
+
+    @ManyToOne(optional = false)
+    private NameCourse nameCourse;
+
+    public NameCourse getNameCourse() {
+        return nameCourse;
+    }
+
+    public void setNameCourse(NameCourse nameCourse) {
+        this.nameCourse = nameCourse;
     }
 }
 

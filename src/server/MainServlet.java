@@ -1,10 +1,7 @@
 package server;
 
 import beans.*;
-import tables.Experience;
-import tables.Gallery;
-import tables.Training;
-import tables.Teacher;
+import tables.*;
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -32,6 +29,10 @@ public class MainServlet extends HttpServlet {
     GalleryService gs;
     @EJB
     ExperienceService es;
+    @EJB
+    NameCourseService ncs;
+    @EJB
+    CourseService cos;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -74,14 +75,8 @@ public class MainServlet extends HttpServlet {
             String tid = request.getParameter("tid");
             try {
                 Integer aid = Integer.valueOf(tid);
-
                 Teacher teacher = ts.find(aid);
                 request.setAttribute("teacher", teacher);
-
-//                Integer eid = Integer.valueOf(tid);
-//                Experience experience = es.find(eid);
-//                request.setAttribute("experience", experience);
-
                 request.getRequestDispatcher("/teacher_resume.jsp").forward(request, response);
             }
             catch (NumberFormatException ex) {
@@ -95,9 +90,30 @@ public class MainServlet extends HttpServlet {
             request.setAttribute("teachers", teachers);
             request.getRequestDispatcher("/teacher.jsp").forward(request,response);
         }
-        else if (servletPath.contains("study.html")){
-            request.getRequestDispatcher("/study.jsp").forward(request,response);
+        else if (servletPath.contains("course.html")){
+
+
+            String cid = request.getParameter("cid");
+            try {
+                Integer aid = Integer.valueOf(cid);
+                NameCourse nameCourse = ncs.find(aid);
+                request.setAttribute("nameCourse", nameCourse);
+                request.getRequestDispatcher("/course.jsp").forward(request, response);
+            }
+            catch (NumberFormatException ex) {
+                response.sendRedirect("nameCourse.html");
+            }
         }
+
+        else if (servletPath.contains("nameCourse.html")){
+            List<NameCourse> nameCourses = ncs.findAll();
+            request.setAttribute("nameCourses", nameCourses);
+            request.getRequestDispatcher("/nameCourse.jsp").forward(request,response);
+        }
+
+
+
+
         else if (servletPath.contains("reviews.html")){
             request.getRequestDispatcher("/reviews.jsp").forward(request,response);
         }

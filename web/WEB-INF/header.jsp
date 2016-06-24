@@ -29,7 +29,7 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-                <a href="study.html">Курсы</a></li>
+                <a href="nameCourse.html">Курсы</a></li>
             <li><a>Обучение</a>
                 <ul class="sub-menu">
                     <c:choose>
