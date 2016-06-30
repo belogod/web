@@ -628,6 +628,8 @@ a:hover{
 	border-radius: 20px;
 	box-shadow: 0 0 0 10px #F2906B;
 	color: #452F21;
+
+
 }
 .table_teacher2 th {
 	font-size: 20px;
@@ -655,10 +657,6 @@ a:hover{
 	border-bottom-right-radius: 20px;
 }
 
-
-
-
-
 /*map*/
 
 
@@ -671,3 +669,82 @@ a:hover{
      margin-bottom: 20px;
  }
 
+
+Title
+
+.table_title1 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	text-align: center;
+	border-collapse: collapse;
+	border-radius: 20px;
+	box-shadow: 0 0 0 10px #f26a55;
+	color: #452F21;
+}
+.table_title1 th {
+	font-size: 40px;
+
+	padding-top: 10px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 10px;
+	background: #ffdcc8;
+}
+
+ul.table_title {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+ul.table_title li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 40px; /* Отступ слева */
+
+    /* Рамка вокруг текста */
+    border: 15px outset #f26a55;
+    /* Поля вокруг текста */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    border-collapse: collapse;
+}
+
+/* ------------- */
+/* -- Sidebar -- */
+/* ------------- */
+#sidebar{
+    float:left;
+    width:315px;
+    margin:0;
+}
+#sidebar .sidebar-title{
+    margin-top:0;
+}
+#sidebar .sidebar-button{
+    clear:both;
+    display:block;
+    background:url(../images/orange-button-bg.png) no-repeat;
+    width:141px;
+    height:34px;
+    color:#fff;
+    text-align:center;
+    padding:5px 0;
+}
+#sidebar .sidebar-button:hover{
+    background:url(../images/black-button-bg.png) no-repeat;
+}
+.recent-projects{
+    clear:both;
+}
+#sidebar .portfolio-item{
+    clear:both;
+    margin:0 0 20px 0;
+}
+
+
+#content{
+    float:left;
+    width:480px;
+    padding:0 165px 0 0;
+}

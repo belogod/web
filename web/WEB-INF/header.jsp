@@ -4,6 +4,7 @@
 <div id="header">
     <div id="nav">
         <ul class="menu">
+
             <c:choose>
             <c:when test="${sp==\"index\"}">
             <li class="current_page_item"> </c:when>

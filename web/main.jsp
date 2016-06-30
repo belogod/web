@@ -65,7 +65,7 @@
     </div>
     <!--end frontpage-main-->
     <div id="footer">
-        <p class="copyright">Чтоб связаться с Нами, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
+        <p class="copyright"><img src="images/logo.png" width="50" height="25" />Чтоб связаться с Нами, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
     </div>
     <!--end footer-->
 </div>

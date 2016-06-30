@@ -24,18 +24,20 @@
 
 
 
-        <c:forEach var="title" items="${titles}">
-            <p></p><table class="table_teacher">
 
-            <caption>${title.title} <br></caption>
-            <tr>
-                <td><p><br><a href="course.html?ttid=${title.id}">Просмотреть резюме</a></td>
+        <ul class="table_title">
+            <c:forEach var="title" items="${titles}">
+            <li><a href="course.html?ttid=${title.id}">${title.title}</a></li>
+            </c:forEach>
 
-            </tr>
+        </ul>
 
-        </table>
-        </c:forEach>
+        <%--<c:forEach var="title" items="${titles}">--%>
+            <%--<table class="table_title">--%>
 
+                <%--<p><th><a href="course.html?ttid=${title.id}">${title.title}</a></th><br></p>--%>
+            <%--</table>--%>
+        <%--</c:forEach>--%>
     </div>
     <!--end wrap-->
 </div>
@@ -43,3 +45,4 @@
 <div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>
 <!--end cache-images-->
 </html>
+

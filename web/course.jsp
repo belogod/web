@@ -21,47 +21,82 @@
     <jsp:include page="WEB-INF/header.jsp"/>
 
 
-    <div class="page-headline"></div>
+    <div class="page-headline">${title.title}</div>
     <div id="main">
 
 
-        <table class="table_teacher">
 
-            <caption>${title.title} <br></caption>
-
-
-        </table>
-
-
-        <table class="table_teacher2">
+        <div id="content">
+        <div class="post">
+            <table class="table_teacher2">
             <p><tr>
-                <th>День недели</th>
-                <th>Время</th>
+            <th>День недели</th>
+            <th>Время</th>
 
             </tr>
-                <c:forEach items="${title.courses}" var="course">
-                <tr>
-                    <td>${course.week}</td>
-                    <td>${course.time}</td>
+            <c:forEach items="${title.courses}" var="course">
+            <tr>
+            <td>${course.week}</td>
+            <td>${course.time}</td>
 
-                </tr>
-                </c:forEach>
-        </table>
+            </tr>
+            </c:forEach>
+            </table>
+    </div>
+</div>
 
-        <table class="table_teacher2">
-            <p><tr>
+
+        <div id="sidebar">
+            <div id="hire">
+                <table class="table_teacher2">
+                <p><tr>
                 <th>Цена</th>
                 <th>Текст</th>
 
-            </tr>
+                </tr>
                 <c:forEach items="${title.courses}" var="course">
                 <tr>
-                    <td>${course.price}</td>
-                    <td>${course.text}</td>
+                <td>${course.price}</td>
+                <td>${course.text}</td>
 
                 </tr>
                 </c:forEach>
-        </table>
+                </table>
+            </div>
+            <!--end recent-projects-->
+        </div>
+
+
+
+        <%--<table class="table_teacher2">--%>
+            <%--<p><tr>--%>
+                <%--<th>День недели</th>--%>
+                <%--<th>Время</th>--%>
+
+            <%--</tr>--%>
+                <%--<c:forEach items="${title.courses}" var="course">--%>
+                <%--<tr>--%>
+                    <%--<td>${course.week}</td>--%>
+                    <%--<td>${course.time}</td>--%>
+
+                <%--</tr>--%>
+                <%--</c:forEach>--%>
+        <%--</table>--%>
+
+        <%--<table class="table_teacher2">--%>
+            <%--<p><tr>--%>
+                <%--<th>Цена</th>--%>
+                <%--<th>Текст</th>--%>
+
+            <%--</tr>--%>
+                <%--<c:forEach items="${title.courses}" var="course">--%>
+                <%--<tr>--%>
+                    <%--<td>${course.price}</td>--%>
+                    <%--<td>${course.text}</td>--%>
+
+                <%--</tr>--%>
+                <%--</c:forEach>--%>
+        <%--</table>--%>
 
 
     </div>
