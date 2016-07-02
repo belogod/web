@@ -10,6 +10,7 @@ public class Review {
     private Integer id;
     private Date date;
     private String text;
+    private String title;
 
     @ManyToOne(optional = false)
     private Client client;
@@ -25,9 +26,10 @@ public class Review {
         this.id = id;
     }
 
-    public Review(Date date, String text) {
+    public Review(Date date, String text, String title) {
         this.date = date;
         this.text = text;
+        this.title = title;
     }
 
     public Review() {
@@ -49,6 +51,14 @@ public class Review {
         this.text = text;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Teacher getTeacher() {
         return teacher;
     }
@@ -56,6 +66,7 @@ public class Review {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -66,7 +77,10 @@ public class Review {
 
         if (id != null ? !id.equals(review.id) : review.id != null) return false;
         if (date != null ? !date.equals(review.date) : review.date != null) return false;
-        return text != null ? text.equals(review.text) : review.text == null;
+        if (text != null ? !text.equals(review.text) : review.text != null) return false;
+        if (title != null ? !title.equals(review.title) : review.title != null) return false;
+        if (client != null ? !client.equals(review.client) : review.client != null) return false;
+        return teacher != null ? teacher.equals(review.teacher) : review.teacher == null;
 
     }
 
@@ -75,6 +89,9 @@ public class Review {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + (text != null ? text.hashCode() : 0);
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (client != null ? client.hashCode() : 0);
+        result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
         return result;
     }
 
@@ -84,6 +101,7 @@ public class Review {
                 "id=" + id +
                 ", date=" + date +
                 ", text='" + text + '\'' +
+                ", title='" + title + '\''+
                 '}';
     }
 

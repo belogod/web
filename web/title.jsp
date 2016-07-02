@@ -24,20 +24,22 @@
 
 
 
-
-        <ul class="table_title">
-            <c:forEach var="title" items="${titles}">
-            <li><a href="course.html?ttid=${title.id}">${title.title}</a></li>
-            </c:forEach>
-
-        </ul>
-
         <%--<c:forEach var="title" items="${titles}">--%>
-            <%--<table class="table_title">--%>
 
-                <%--<p><th><a href="course.html?ttid=${title.id}">${title.title}</a></th><br></p>--%>
-            <%--</table>--%>
+        <%--<table class="table_teacher2">--%>
+            <%--<li><a href="course.html?ttid=${title.id}">${title.title}</a></li>--%>
+
+     <%--</table>--%>
         <%--</c:forEach>--%>
+
+        <c:forEach var="title" items="${titles}">
+            <table class="table_title1">
+                <p><th><a href="course.html?ttid=${title.id}">${title.title}</a></th></p>
+            </table>
+        </c:forEach>
+
+
+
     </div>
     <!--end wrap-->
 </div>

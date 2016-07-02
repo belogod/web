@@ -13,19 +13,15 @@ public class Сourse {
 
     private String week;
     private String time;
-    private String price;
-    private String text;
 
 
 
-    public Сourse(String week, String time, String price, String text) {
+
+    public Сourse(String week, String time) {
 
         this.week = week;
         this.time = time;
-        this.price = price;
-        this.text = text;
-
-    }
+           }
 
     public Сourse() {
     }
@@ -48,22 +44,6 @@ public class Сourse {
         this.time = time;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public Integer getId() {
         return id;
     }
@@ -82,8 +62,7 @@ public class Сourse {
         if (id != null ? !id.equals(сourse.id) : сourse.id != null) return false;
         if (week != null ? !week.equals(сourse.week) : сourse.week != null) return false;
         if (time != null ? !time.equals(сourse.time) : сourse.time != null) return false;
-        if (price != null ? !price.equals(сourse.price) : сourse.price != null) return false;
-        return text != null ? text.equals(сourse.text) : сourse.text == null;
+        return title != null ? title.equals(сourse.title) : сourse.title == null;
 
     }
 
@@ -92,8 +71,7 @@ public class Сourse {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (week != null ? week.hashCode() : 0);
         result = 31 * result + (time != null ? time.hashCode() : 0);
-        result = 31 * result + (price != null ? price.hashCode() : 0);
-        result = 31 * result + (text != null ? text.hashCode() : 0);
+        result = 31 * result + (title != null ? title.hashCode() : 0);
         return result;
     }
 
@@ -103,8 +81,6 @@ public class Сourse {
                 "id=" + id +
                 ", week='" + week + '\'' +
                 ", time='" + time + '\'' +
-                ", price='" + price + '\'' +
-                ", text='" + text + '\'' +
                 '}';
     }
 

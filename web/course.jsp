@@ -28,16 +28,14 @@
 
         <div id="content">
         <div class="post">
-            <table class="table_teacher2">
-            <p><tr>
-            <th>День недели</th>
-            <th>Время</th>
 
-            </tr>
+           <p> <span class="price"> ГРУППА ЗАНИМАЕТСЯ:</span></p>
+
+            <table class="table_teacher2">
             <c:forEach items="${title.courses}" var="course">
             <tr>
-            <td>${course.week}</td>
-            <td>${course.time}</td>
+            <th>${course.week}</th>
+            <th>${course.time}</th>
 
             </tr>
             </c:forEach>
@@ -46,59 +44,15 @@
 </div>
 
 
-        <div id="sidebar">
-            <div id="hire">
-                <table class="table_teacher2">
-                <p><tr>
-                <th>Цена</th>
-                <th>Текст</th>
 
-                </tr>
-                <c:forEach items="${title.courses}" var="course">
-                <tr>
-                <td>${course.price}</td>
-                <td>${course.text}</td>
+        <span class="price"> Стоимость:</span>
+        <br><p><span class="price2"> ${title.price} грн. за весь курс.</span></p>
 
-                </tr>
-                </c:forEach>
-                </table>
-            </div>
-            <!--end recent-projects-->
+                ${title.text}
+
+        <div id="footer">
+            <p class="copyright"><img src="images/logo.png" width="50" height="25" />Для записи на курс, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
         </div>
-
-
-
-        <%--<table class="table_teacher2">--%>
-            <%--<p><tr>--%>
-                <%--<th>День недели</th>--%>
-                <%--<th>Время</th>--%>
-
-            <%--</tr>--%>
-                <%--<c:forEach items="${title.courses}" var="course">--%>
-                <%--<tr>--%>
-                    <%--<td>${course.week}</td>--%>
-                    <%--<td>${course.time}</td>--%>
-
-                <%--</tr>--%>
-                <%--</c:forEach>--%>
-        <%--</table>--%>
-
-        <%--<table class="table_teacher2">--%>
-            <%--<p><tr>--%>
-                <%--<th>Цена</th>--%>
-                <%--<th>Текст</th>--%>
-
-            <%--</tr>--%>
-                <%--<c:forEach items="${title.courses}" var="course">--%>
-                <%--<tr>--%>
-                    <%--<td>${course.price}</td>--%>
-                    <%--<td>${course.text}</td>--%>
-
-                <%--</tr>--%>
-                <%--</c:forEach>--%>
-        <%--</table>--%>
-
-
     </div>
     <!--end wrap-->
 </div>

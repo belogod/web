@@ -15,13 +15,17 @@ public class Title {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
+    private String price;
+    private String text;
 
   @OneToMany (mappedBy = "title")
   private Collection <Сourse> courses;
 
 
-    public Title(String title, Collection<Сourse> courses) {
+    public Title(String title, String price, String text, Collection<Сourse> courses) {
         this.title = title;
+        this.price = price;
+        this.text = text;
         this.courses = courses;
     }
 
@@ -44,6 +48,22 @@ public class Title {
         this.title = title;
     }
 
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
     public Collection<Сourse> getCourses() {
         return courses;
     }
@@ -57,11 +77,13 @@ public class Title {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Title that = (Title) o;
+        Title title1 = (Title) o;
 
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (title != null ? !title.equals(that.title) : that.title != null) return false;
-        return courses != null ? courses.equals(that.courses) : that.courses == null;
+        if (id != null ? !id.equals(title1.id) : title1.id != null) return false;
+        if (title != null ? !title.equals(title1.title) : title1.title != null) return false;
+        if (price != null ? !price.equals(title1.price) : title1.price != null) return false;
+        if (text != null ? !text.equals(title1.text) : title1.text != null) return false;
+        return courses != null ? courses.equals(title1.courses) : title1.courses == null;
 
     }
 
@@ -69,6 +91,8 @@ public class Title {
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (price != null ? price.hashCode() : 0);
+        result = 31 * result + (text != null ? text.hashCode() : 0);
         result = 31 * result + (courses != null ? courses.hashCode() : 0);
         return result;
     }
@@ -78,6 +102,8 @@ public class Title {
         return "Title{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", price='" + price + '\'' +
+                ", text='" + text + '\'' +
                 ", courses=" + courses +
                 '}';
     }
