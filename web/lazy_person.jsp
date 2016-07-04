@@ -22,7 +22,7 @@
     <div class="page-headline">Для лентяев</div>
     <div id="main">
         <div id="content">
-            <%--  Извлекаем из БД  Таблица: interesting --%>
+            <%--  Извлекаем из БД  Таблица: training --%>
             <c:forEach items="${trainings}" var="training">
                 <h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3>
                 <c:out value="<img src=\"picture/${training.picture}\"" escapeXml="false" />
@@ -30,15 +30,16 @@
                 <div class="post-line"></div>
             </c:forEach>
 
-            <ul class="post-navigation">
-                <li><a href="interesting.html">&laquo; Это интересно</a></li>
 
-                <li><a href="slang.html">&laquo; Слэнг</a></li>
-            </ul>
         </div>
         <!--end content-->
 
     </div>
+    <ul class="post-navigation">
+        <li><a href="idioms.html">&laquo; Идиомы</a></li>
+
+        <li><a href="slang.html">&laquo; Слэнг</a></li>
+    </ul>
 </div>
 
 </body>

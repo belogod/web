@@ -24,17 +24,9 @@
 
 
 
-        <%--<c:forEach var="title" items="${titles}">--%>
-
-        <%--<table class="table_teacher2">--%>
-            <%--<li><a href="course.html?ttid=${title.id}">${title.title}</a></li>--%>
-
-     <%--</table>--%>
-        <%--</c:forEach>--%>
-
         <c:forEach var="title" items="${titles}">
-            <table class="table_title1">
-                <p><th><a href="course.html?ttid=${title.id}">${title.title}</a></th></p>
+            <table class="table_teacher2">
+                <tr><th><a href="course.html?ttid=${title.id}">${title.title}</a></th></tr><br>
             </table>
         </c:forEach>
 

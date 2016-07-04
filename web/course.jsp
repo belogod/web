@@ -50,11 +50,14 @@
 
                 ${title.text}
 
-        <div id="footer">
-            <p class="copyright"><img src="images/logo.png" width="50" height="25" />Для записи на курс, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
-        </div>
     </div>
     <!--end wrap-->
+    <ul class="post-navigation">
+        <li><a href="lesson.html">&laquo; Курсы</a></li>
+    </ul>
+    <div id="footer">
+        <p class="copyright"><img src="images/logo.png" width="50" height="25" />Для записи на курс, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
+    </div>
 </div>
 </body>
 <div class="cache-images"><img src="images/red-button-bg.png" width="0" height="0" alt="" /><img src="images/black-button-bg.png" width="0" height="0" alt="" /></div>

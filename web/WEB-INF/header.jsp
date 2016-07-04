@@ -30,8 +30,8 @@
             <li>
                 </c:otherwise>
                 </c:choose>
-                <a href="title.html">Курсы</a></li>
-            <li><a>Обучение</a>
+                <a href="lesson.html">Курсы</a></li>
+            <li><a>Это интересно</a>
                 <ul class="sub-menu">
                     <c:choose>
                     <c:when test="${sp==\"interesting\"}">
@@ -41,7 +41,7 @@
                     <li>
                         </c:otherwise>
                         </c:choose>
-                        <a href="interesting.html">Это интересно</a></li>
+                        <a href="idioms.html">Идиомы</a></li>
                     <c:choose>
                     <c:when test="${sp==\"slang\"}">
                     <li class="current_page_item">
@@ -59,7 +59,7 @@
                     <li>
                         </c:otherwise>
                         </c:choose>
-                        <a href="lazy_person.html">Для лентяев</a></li>
+                        <a href="contact.html">Для лентяев</a></li>
                 </ul>
                 <c:choose>
                 <c:when test="${sp==\"gallery\"}">
@@ -70,15 +70,15 @@
                 </c:otherwise>
                 </c:choose>
                 <a href="gallery.html">Галерея</a></li>
-            <c:choose>
-            <c:when test="${sp==\"reviews\"}">
-            <li class="current_page_item">
-                </c:when>
-                <c:otherwise>
-            <li>
-                </c:otherwise>
-                </c:choose>
-                <a href="reviews.html">Отзывы</a></li>
+            <%--<c:choose>--%>
+            <%--<c:when test="${sp==\"reviews\"}">--%>
+            <%--<li class="current_page_item">--%>
+                <%--</c:when>--%>
+                <%--<c:otherwise>--%>
+            <%--<li>--%>
+                <%--</c:otherwise>--%>
+                <%--</c:choose>--%>
+                <%--<a href="reviews.html">Отзывы</a></li>--%>
             <c:choose>
             <c:when test="${sp==\"contact\"}">
             <li class="current_page_item">
@@ -88,6 +88,7 @@
                 </c:otherwise>
                 </c:choose>
                 <a href="contact.html">Контакты</a></li>
+
         </ul>
     </div>
     <!--end nav-->

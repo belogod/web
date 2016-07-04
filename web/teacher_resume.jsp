@@ -55,6 +55,9 @@
 
 
     </div>
+    <ul class="post-navigation">
+        <li><a href="teacher.html">&laquo; Преподаватели</a></li>
+    </ul>
     <!--end wrap-->
 </div>
 </body>

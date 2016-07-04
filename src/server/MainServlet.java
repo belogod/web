@@ -106,12 +106,12 @@ public class MainServlet extends HttpServlet {
                 request.getRequestDispatcher("/course.jsp").forward(request, response);
             }
             catch (NumberFormatException ex) {
-                response.sendRedirect("title.html");
+                response.sendRedirect("lesson.html");
             }
 
         }
 
-        else if (servletPath.contains("title.html")){
+        else if (servletPath.contains("lesson.html")){
             List<Title> titles = tis.findAll();
             request.setAttribute("titles", titles);
             request.getRequestDispatcher("/title.jsp").forward(request,response);
@@ -129,7 +129,7 @@ public class MainServlet extends HttpServlet {
         else if (servletPath.contains("reviews.html")){
             request.getRequestDispatcher("/reviews.jsp").forward(request,response);
         }
-        else if (servletPath.contains("interesting.html")){
+        else if (servletPath.contains("idioms.html")){
             request.setAttribute("trainings", trs.findByType(Training.INTERESTING));
             request.getRequestDispatcher("/interesting.jsp").forward(request,response);
         }
@@ -141,11 +141,11 @@ public class MainServlet extends HttpServlet {
             request.setAttribute("trainings", trs.findByType(Training.LAZY));
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
-        else if (servletPath.contains("piece-of-cake.html")){
-            request.getRequestDispatcher("/piece-of-cake.jsp").forward(request,response);
+        else if (servletPath.contains("idiom.html")){
+            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
         }
         else if (servletPath.contains("bite-the-bullet.html")){
-            request.getRequestDispatcher("/bite-the-bullet.jsp").forward(request,response);
+            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
         } else {
             String requestURI = request.getRequestURI();
             int p = requestURI.lastIndexOf("/");

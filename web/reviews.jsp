@@ -25,7 +25,7 @@
 
     <div class="container">
         <div class="row">
-            <h2>Оставить отзыв</h2>
+            <h2><a title="" href="form.jsp">Оставить отзыв</a></h2>
         </div>
     </div>
     <div class="carousel-reviews broun-block">
@@ -48,56 +48,7 @@
                                     <i>Дата</i>
                                 </div>
                             </div>
-
-
-
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="block-text rel zmin">
-                                    <a title="" href="#">Имя отправителя</a>
-                                    <div class="mark">Тема: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                    <p>Текст отзыва</p>
-                                    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                                </div>
-                                <div class="person-text rel">
-                                    <img src="images/logo.png" width="100" height="50"/>
-                                    <a title="" href="#">Имя преподавателя</a>
-                                    <i>Дата</i>
-                                </div>
-                            </div><div class="col-md-4 col-sm-6">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Имя отправителя</a>
-                                <div class="mark">Тема: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>Текст отзыва</p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/logo.png" width="100" height="50"/>
-                                <a title="" href="#">Имя преподавателя</a>
-                                <i>Дата</i>
-                            </div>
-                        </div><div class="col-md-4 col-sm-6">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Имя отправителя</a>
-                                <div class="mark">Тема: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>Текст отзыва</p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/logo.png" width="100" height="50"/>
-                                <a title="" href="#">Имя преподавателя</a>
-                                <i>Дата</i>
-                            </div>
                         </div>
-
-
-
-
-
-
-                        </div>
-
-
                     </div>
                     <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>

@@ -569,18 +569,18 @@ a:hover{
 
 .table_teacher {
 	border-collapse: collapse;
-	border-left: 3px solid #F08080;
-	border-right: 3px solid #F08080;
-	border-bottom: 3px solid #F08080;
+	border-left: 3px solid #a5642c;
+	border-right: 3px solid #a5642c;
+	border-bottom: 3px solid #a5642c;
 	font-family: "Lucida Grande", sans-serif;
 }
 .table_teacher caption {
-	background: #F08080;
+	background: #a5642c;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	padding: 10px;
 	box-shadow: 0 2px  4px 0 rgba(0,0,0,.3);
-	color: white;
+	color: #ffde90;
 	font-family: "Roboto Slab",serif;
 	font-style: normal;
 	font-size: 26px;
@@ -603,8 +603,9 @@ a:hover{
 .table_teacher a {
 	display: inline-block;
 	padding: 5px 10px;
-	background: #F79361;
-	box-shadow: 2px 2px 0 0 #a22800;
+	color: #856147;
+	background: #ffde90;
+	box-shadow: 2px 2px 0 0 #856147;
 	position: relative;
 }
 .table_teacher a:hover {
@@ -626,8 +627,8 @@ a:hover{
 	text-align: left;
 	border-collapse: collapse;
 	border-radius: 20px;
-	box-shadow: 0 0 0 10px #F2906B;
-	color: #452F21;
+	box-shadow: 0 0 0 10px #ffde90;
+	color: #856147;
 
 
 }
@@ -646,7 +647,7 @@ a:hover{
 .table_teacher2 td {
 	font-size: 14px;
 
-	border-top: 10px solid #F2906B;
+	border-top: 10px solid #ffde90;
 	padding: 8px;
 	background: white;
 }
@@ -656,7 +657,23 @@ a:hover{
 .table_teacher2 td:last-child {
 	border-bottom-right-radius: 20px;
 }
+.table_teacher a {
+	display: inline-block;
+	padding: 5px 10px;
+	color: #856147;
+	background: #ffde90;
+	box-shadow: 2px 2px 0 0 #856147;
+	position: relative;
+}
+.table_teacher a:hover {
+	box-shadow: none;
+	top: 2px;
+	left: 2px;
+}
 
+#about {
+	vertical-align: top;
+}
 /*map*/
 
 
@@ -750,13 +767,13 @@ ul.table_title li {
 }
 
 .price {
-	color: green;
+	color: #58800c;
 	font-size: 30px;
 
 }
 
 .price2 {
-	color: red;
+	color: rgba(202, 0, 0, 0.86);
 	font-size: 25px;
 }
 
@@ -874,4 +891,23 @@ body{padding-top:20px;}
 }
 .carousel-indicators .active {
 	background: #428bca;
+}
+
+.idiom {
+color: #85630e;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.idiom2 {
+color: rgba(180, 39, 143, 0.82);
+	font-size: 15px;
+	text-align: justify;
+}
+
+.idiom3 {
+color: #ff743c;
+	font-size: 20px;
+
+
 }
