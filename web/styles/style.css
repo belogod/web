@@ -399,11 +399,11 @@ a:hover{
 }
 .post-title a{
 	font-size:35px;
-	color: #ca0000;
+	color: #f2720a;
 }
 .post-title a:hover{
 	font-size:45px;
-	color: #f26a55;
+	color: #f2cd0c;
 }
 .post-meta, .post-meta a{
 	margin:5px 0 20px 0;
@@ -906,8 +906,9 @@ color: rgba(180, 39, 143, 0.82);
 }
 
 .idiom3 {
-color: #ff743c;
-	font-size: 20px;
+color: #85630e;
+	font-size: 25px;
+	text-align: justify;
 
 
 }
@@ -915,3 +916,4 @@ color: #ff743c;
 .lazy {
 margin-bottom: 100px;
 }
+

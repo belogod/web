@@ -50,22 +50,22 @@
         <!--end image-slider-->
     </div>
     <!--end featured-section-->
-    <c:forEach items="${trainings}" var="training">
-    <div id="frontpage-main">
-        <div id="frontpage-content">
+    <%--<c:forEach items="${trainings}" var="training">--%>
+    <%--<div id="frontpage-main">--%>
+        <%--<div id="frontpage-content">--%>
 
-            <br><h3>${training.title}</h3>
+            <%--<br><h3>${training.title}</h3>--%>
 
-            <br><ul class="blue-bullets">
-                <li>${training.text}</li>
+            <%--<br><ul class="blue-bullets">--%>
+                <%--<li>${training.text}</li>--%>
 
-            </ul>
+            <%--</ul>--%>
 
-        </div>
-        </c:forEach>
-        <!--end frontpage-content-->
+        <%--</div>--%>
+        <%--</c:forEach>--%>
+        <%--<!--end frontpage-content-->--%>
 
-    </div>
+    <%--</div>--%>
     <!--end frontpage-main-->
     <div id="footer">
         <p class="copyright"><img src="images/logo.png" width="50" height="25" />Чтоб связаться с Нами, перейдите на страницу - <a href="contact.html">"Контакты"</a></p>
