@@ -59,7 +59,7 @@
                     <li>
                         </c:otherwise>
                         </c:choose>
-                        <a href="contact.html">Для лентяев</a></li>
+                        <a href="lazy_person.html">Для лентяев</a></li>
                 </ul>
                 <c:choose>
                 <c:when test="${sp==\"gallery\"}">

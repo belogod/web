@@ -21,18 +21,19 @@
 
     <div class="page-headline">Для лентяев</div>
     <div id="main">
-        <div id="content">
-            <%--  Извлекаем из БД  Таблица: training --%>
+        <div class="lazy"> <img src="images/lazy.jpg"></div>
+
+        <%--  Извлекаем из БД  Таблица: training --%>
             <c:forEach items="${trainings}" var="training">
-                <h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3>
-                <c:out value="<img src=\"picture/${training.picture}\"" escapeXml="false" />
-                <p><c:out value="${training.text}" escapeXml="false" /></p>
+
+                <p><h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3></p>
+                <p><c:out value="<img  src=\"picture/${training.picture} \""  escapeXml="false"  /></p>
+                <p><div class="idiom3"> <c:out value="${training.text}" escapeXml="false" /></div></p>
                 <div class="post-line"></div>
             </c:forEach>
 
 
-        </div>
-        <!--end content-->
+
 
     </div>
     <ul class="post-navigation">
