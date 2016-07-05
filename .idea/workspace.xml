@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b33597e7-e3cc-4f16-b74f-e79a7f6d7c41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/picture/Thumbs.db" afterPath="$PROJECT_DIR$/web/picture/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/E-Mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/idioms.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/idioms.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/lazy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/ira.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tala.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/picture/linqualeo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/picture/puzzle.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/lazy_person.jsp" afterPath="$PROJECT_DIR$/web/lazy_person.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/styles/style.css" afterPath="$PROJECT_DIR$/web/styles/style.css" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -289,24 +294,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="picture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webenglish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webenglish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -899,7 +886,7 @@
       <workItem from="1467211943261" duration="19176000" />
       <workItem from="1467473518406" duration="9510000" />
       <workItem from="1467485995209" duration="2054000" />
-      <workItem from="1467552458860" duration="27259000" />
+      <workItem from="1467552458860" duration="27419000" />
     </task>
     <task id="LOCAL-00001" summary="11.03">
       <created>1457729532827</created>
@@ -1153,15 +1140,22 @@
       <option name="project" value="LOCAL" />
       <updated>1467660287628</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="05.07&#10;">
+      <created>1467744005950</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1467744005950</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300894000" />
+    <option name="totallyTimeSpent" value="301054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1177,7 +1171,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869894" sideWeight="0.49140048" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869894" sideWeight="0.49140048" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15885022" sideWeight="0.5085995" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1226,7 +1220,8 @@
     <MESSAGE value="30.06" />
     <MESSAGE value="02.07" />
     <MESSAGE value="04.07" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.07" />
+    <MESSAGE value="05.07&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="05.07&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
