@@ -131,7 +131,7 @@ public class MainServlet extends HttpServlet {
         }
         else if (servletPath.contains("idioms.html")){
             request.setAttribute("trainings", trs.findByType(Training.INTERESTING));
-            request.getRequestDispatcher("/interesting.jsp").forward(request,response);
+            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
         }
         else if (servletPath.contains("slang.html")){
             request.setAttribute("trainings", trs.findByType(Training.SLANG));
@@ -141,18 +141,18 @@ public class MainServlet extends HttpServlet {
             request.setAttribute("trainings", trs.findByType(Training.LAZY));
             request.getRequestDispatcher("/lazy_person.jsp").forward(request,response);
         }
-        else if (servletPath.contains("idiom.html")){
-            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
-        }
-        else if (servletPath.contains("bite-the-bullet.html")){
-            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
-        } else {
-            String requestURI = request.getRequestURI();
-            int p = requestURI.lastIndexOf("/");
-            String link = requestURI.substring(p+1);
-            request.setAttribute("txt",link);
-            request.getRequestDispatcher("/none.jsp").forward(request,response);
-        }
+//        else if (servletPath.contains("idiom.html")){
+//            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
+//        }
+//        else if (servletPath.contains("bite-the-bullet.html")){
+//            request.getRequestDispatcher("/idiom.jsp").forward(request,response);
+//        } else {
+//            String requestURI = request.getRequestURI();
+//            int p = requestURI.lastIndexOf("/");
+//            String link = requestURI.substring(p+1);
+//            request.setAttribute("txt",link);
+//            request.getRequestDispatcher("/none.jsp").forward(request,response);
+//        }
     }
 
 

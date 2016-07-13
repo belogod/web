@@ -34,7 +34,7 @@
             <li><a>Это интересно</a>
                 <ul class="sub-menu">
                     <c:choose>
-                    <c:when test="${sp==\"interesting\"}">
+                    <c:when test="${sp==\"idiom\"}">
                     <li class="current_page_item">
                         </c:when>
                         <c:otherwise>
