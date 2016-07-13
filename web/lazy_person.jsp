@@ -28,7 +28,7 @@
 
                 <p><h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3></p>
                 <p><c:out value="<img  src=\"picture/${training.picture} \""  escapeXml="false"  /></p>
-                <p><div class="idiom3"> <c:out value="${training.text}" escapeXml="false" /></div></p>
+                <p><div class="slang3"> <c:out value="${training.text}" escapeXml="false" /></div></p>
                 <div class="post-line"></div>
             </c:forEach>
 

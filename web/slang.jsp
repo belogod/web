@@ -19,19 +19,20 @@
 <div id="wrap">
     <jsp:include page="WEB-INF/header.jsp"/>
 
-    <div class="page-headline">Сленг</div>
+    <div class="page-headline">Slang</div>
     <div id="main">
-        <div id="content">
-            <%--  Извлекаем из БД  Таблица: training --%>
-            <c:forEach items="${trainings}" var="training">
-                <h3 class="post-title"><c:out value="<a href=\"${training.url}\">${training.title}</a>" escapeXml="false" /></h3>
-                <c:out value="<img src=\"picture/${training.picture}\"" escapeXml="false" />
-                <p><c:out value="${training.text}" escapeXml="false" /></p>
-                <div class="post-line"></div>
-            </c:forEach>
+        <div class="lazy"> <img src="images/slang.jpg"></div>
+        <div class="slang2">Предлогаю Вам Самые популярные Слэнг-Слова в Американском Английском</div>
+        <p><div class="slang"> Сленг — это,по большому счету,  использование разговорных слов и выражений, которые не являются частью стандартного языка. Слэнг чаще всего  используют молодые люди, однако,   он, также, используется социальными группами и других возрастов.</div></p>
+        <div class="post-line"></div>
+        <%--  Извлекаем из БД  Таблица: training --%>
+        <c:forEach items="${trainings}" var="training">
 
-
-        </div>
+            <p><div class="slang4"><c:out value="${training.title}" escapeXml="false" /></div></p>
+            <p><c:out value="<img  src=\"picture/${training.picture} \""  escapeXml="false"  /></p>
+            <p><div class="slang3"> <c:out value="${training.text}" escapeXml="false" /></div></p>
+            <div class="post-line"></div>
+        </c:forEach>
         <!--end content-->
 
     </div>

@@ -917,3 +917,24 @@ color: #85630e;
 margin-bottom: 100px;
 }
 
+.slang {
+	color: #c3ba09;
+	font-size: 15px;
+	text-align: justify;
+}
+
+.slang2 {
+	color: rgba(180, 15, 156, 0.82);
+	font-size: 30px;
+	text-align: justify;
+}
+.slang3 {
+	color: #d1120c;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.slang4 {
+	color: #f79a1a;
+	font-size: 35px;
+}
