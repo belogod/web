@@ -48,9 +48,9 @@
         <div id="contact-form-container">
             <form id="contact-form" method="post" action="belogod@gmail.com">
                 <fieldset>
-                    <input id="form_name" type="text" name="name" value="Имя" onFocus="if(this.value=='Name'){this.value=''};" onBlur="if(this.value==''){this.value='Name'};" />
+                    <input id="form_name" type="text" name="name" value="Имя" onFocus="if(this.value=='Имя'){this.value=''};" onBlur="if(this.value==''){this.value='Имя'};" />
                     <input id="form_email" type="text" name="email" value="Email" onFocus="if(this.value=='Email'){this.value=''};" onBlur="if(this.value==''){this.value='Email'};" />
-                    <input id="form_subject" type="text" name="subject" value="Тема" onFocus="if(this.value=='Subject'){this.value=''};" onBlur="if(this.value==''){this.value='Subject'};" />
+                    <input id="form_subject" type="text" name="subject" value="Тема" onFocus="if(this.value=='Тема'){this.value=''};" onBlur="if(this.value==''){this.value='Тема'};" />
                     <textarea id="form_message" rows="10" cols="40" name="message"></textarea>
                     <input id="form_submit" class="submit" type="submit" name="submit" value="Отправить &raquo;" />
                     <div class="hide">
